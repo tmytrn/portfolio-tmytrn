@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Medium.ttf");
+  font-weight: 600;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #20215b;
+}
+
+.me {
+  position: relative;
+  left: 50%;
+  margin-top: -10rem;
+  transform: translateX(-50%);
+}
+.behind{
+    z-index: -1;
+}
+.fade {
+  opacity: 0.5;
+}
+
+.tmytrn {
+  text-decoration: none;
+}
+.tmytrn:hover .fade {
+  opacity: 1 !important;
+  text-decoration: underline;
+}
+.tmytrn:hover {
+    opacity: 1 !important;
+    text-decoration: underline;
+  }
+.color{
+    color: #20215b;
+
+}
+.head {
+    z-index: 1;
+  }
