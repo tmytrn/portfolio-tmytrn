@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
             <h1 className=" f2 f1-l f-mt0 mv0  db"><a href="https://www.instagram.com/tmytrn" className=" no-underline light-purple">@tmytrn <span className="fade">on ig</span></a></h1>
             <h1 className=" f2 f1-l f-mt0 mv0  db"><a href="https://www.twitter.com/tmytrn" className=" no-underline blue">@tmytrn <span className="fade">on twitter</span></a></h1>
             <h1 className=" f2 f1-l f-mt0 mv0  db"><a href="mailto:tommy@tmytrn.com" className=" tmytrn red ">@tmytrn.com, I respond quick.</a></h1>
-            <h1 className=" f2 f1-l f-mt0 mv5 db"><a href="CV/@tmytrn_CV_2020.pdf" className="tmytrn color ph0" download>@tmytrn_CV_2020.pdf</a></h1>
+            <h1 className=" f2 f1-l f-mt0 mv5 db"><a href="/@tmytrn_CV_2020.pdf" className="tmytrn color ph0" download>@tmytrn_CV_2020.pdf</a></h1>
           </div>
           </div>
           <style jsx >
