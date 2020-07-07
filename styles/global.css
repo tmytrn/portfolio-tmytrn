@@ -28,15 +28,17 @@ body {
     z-index: -1;
 }
 .fade {
-  opacity: 0.5;
+  opacity: 0.45;
 }
-
-.tmytrn {
+.no-underline{
   text-decoration: none;
 }
-.tmytrn:hover .fade {
+.no-underline:hover .fade{
   opacity: 1 !important;
-  text-decoration: underline;
+  text-decoration: none;
+}
+.tmytrn {
+  text-decoration: none;
 }
 .tmytrn:hover {
     opacity: 1 !important;
