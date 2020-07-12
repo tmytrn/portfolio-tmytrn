@@ -1,0 +1,21 @@
+
+  .iphoneWrapper {
+    height: 480px;
+    overflow: scroll;
+  }
+  .iphone img{
+    width: 75%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .me {
+      margin-top: -6rem;
+    }
+    .iphoneWrapper {
+      height: 600px;
+    }
+  }
+
+  .features {
+    top: 50%;
+  }

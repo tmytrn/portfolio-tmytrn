@@ -37,10 +37,10 @@ body {
   opacity: 1 !important;
   text-decoration: none;
 }
-.tmytrn {
+.underline {
   text-decoration: none;
 }
-.tmytrn:hover {
+.underline:hover {
     opacity: 1 !important;
     text-decoration: underline;
   }

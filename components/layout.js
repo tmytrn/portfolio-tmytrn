@@ -6,7 +6,7 @@ import Link from 'next/link'
 const name = 'Tommy Tran'
 export const siteTitle = 'Tommy Tran'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, portfolioHome }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -23,47 +23,38 @@ export default function Layout({ children, home }) {
     design tells a story, and should feel effortless."/>
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Tommy Tran" />
-        <meta name="twitter:site" content="@tmytrn"/>
-          <meta name="twitter:image" content="https://tmytrn.com/images/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg" />
-          <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
-
+        <meta name="twitter:site" content="@tmytrn" />
+        <meta name="twitter:image" content="https://tmytrn.com/images/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg" />
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
       </Head>
-        <header className={styles.header}>
-          {home ? (
-            <>
-              <style jsx global>
-                {`body {
+      <header className={styles.header}>
+        {(home) ? (
+          <>
+            <style jsx global>
+              {`body {
                  background-color: rgb(190, 191, 210);
               }`
-                }</style>
+              }</style>
+          </>
+        ) : (
+            <>
+              <div className="mw8 center ph2 ph4-ns">
+                <h1 className="f3 f2-ns tl">Tommy Tran—Portfolio</h1>
+              </div>
+
             </>
-          ) : (
-              <>
-                <Link href="/">
-                  <a>
-                    <img
-                      src="/images/profile.jpg"
-                      className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                      alt={name}
-                    />
-                  </a>
-                </Link>
-                <h2 className={utilStyles.headingLg}>
-                  <Link href="/">
-                    <a className={utilStyles.colorInherit}>{name}</a>
-                  </Link>
-                </h2>
-              </>
-            )}
-        </header>
-        <main>{children}</main>
-        {!home && (
-          <div className={styles.backToHome}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
-          </div>
-        )}
+          )}
+        {(portfolioHome) ? (
+          <>
+            <style jsx global>
+              {`body {
+                           background-color: #eeeeee;
+                        }`
+              }</style>
+          </>
+        ) : (<></>)}
+      </header>
+      <main>{children}</main>
     </div>
   )
 }

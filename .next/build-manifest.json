@@ -27,6 +27,10 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/portfolio/Airbnb": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }
