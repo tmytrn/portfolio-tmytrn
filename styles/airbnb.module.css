@@ -1,6 +1,6 @@
 
   .iphoneWrapper {
-    height: 480px;
+    height: 600px;
     overflow: scroll;
   }
   .iphone img{
@@ -15,7 +15,6 @@
       height: 600px;
     }
   }
-
   .features {
     top: 50%;
   }

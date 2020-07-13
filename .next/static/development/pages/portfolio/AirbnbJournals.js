@@ -170,11 +170,11 @@ function Layout(_ref) {
   }, home ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "3976329729",
     __self: this
-  }, "body{background-color:rgb(190,191,210);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpQ2UsQUFFc0Qsa0NBQ3ZDIiwiZmlsZSI6Ii9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBzdHlsZXMgZnJvbSAnLi9sYXlvdXQubW9kdWxlLmNzcydcbmltcG9ydCB1dGlsU3R5bGVzIGZyb20gJy4uL3N0eWxlcy91dGlscy5tb2R1bGUuY3NzJ1xuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuXG5jb25zdCBuYW1lID0gJ1RvbW15IFRyYW4nXG5leHBvcnQgY29uc3Qgc2l0ZVRpdGxlID0gJ1RvbW15IFRyYW4nXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExheW91dCh7IGNoaWxkcmVuLCBob21lLCBwb3J0Zm9saW9Ib21lLCBwb3J0Zm9saW9Qcm9qZWN0IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmNvbnRhaW5lcn0+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPntzaXRlVGl0bGV9PC90aXRsZT5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIGhyZWY9XCIvZmF2aWNvbi5wbmdcIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwiZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnVybFwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb21cIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOmltYWdlXCIgY29udGVudD1cImh0dHBzOi8vdG15dHJuLmNvbS9pbWFnZXMvdG9tbXktdHJhbi1AdG15dHJuLXdlYnNpdGUtcG9ydHJhaXQtMjAyMC1ieS1iZW5qYW1pbi1zaW9yZGlhLmpwZ1wiIC8+XG4gICAgICAgIDxtZXRhIHByb3BlcnR5PVwib2c6ZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnR5cGVcIiBjb250ZW50PVwid2Vic2l0ZVwiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ0d2l0dGVyOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjpzaXRlXCIgY29udGVudD1cIkB0bXl0cm5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjppbWFnZVwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb20vaW1hZ2VzL3RvbW15LXRyYW4tQHRteXRybi13ZWJzaXRlLXBvcnRyYWl0LTIwMjAtYnktYmVuamFtaW4tc2lvcmRpYS5qcGdcIiAvPlxuICAgICAgICA8bGluayByZWw9XCJzdHlsZXNoZWV0XCIgaHJlZj1cImh0dHBzOi8vdW5wa2cuY29tL3RhY2h5b25zQDQuMTIuMC9jc3MvdGFjaHlvbnMubWluLmNzc1wiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8aGVhZGVyIGNsYXNzTmFtZT17c3R5bGVzLmhlYWRlcn0+XG4gICAgICAgIHsoaG9tZSkgPyAoXG4gICAgICAgICAgPD5cbiAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICAgICAgICB7YGJvZHkge1xuICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTkwLCAxOTEsIDIxMCk7XG4gICAgICAgICAgICAgIH1gXG4gICAgICAgICAgICAgIH08L3N0eWxlPlxuICAgICAgICAgIDwvPlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD5cbiAgICAgICAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+XG4gICAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNlZWVlZWU7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICAgIH08L3N0eWxlPlxuXG4gICAgICAgICAgICA8Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb0hvbWUpID8gKFxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm13OSBjZW50ZXIgcGgyIHBoNC1ucyBuYXYtaGVhZGVyXCI+XG4gICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJmMyBmMi1ucyB0bFwiPlRvbW15IFRyYW7igJRQb3J0Zm9saW88L2gxPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNlZWVlZWU7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICA8L3N0eWxlPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb1Byb2plY3QpID8gKFxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXc5IGNlbnRlciBwaDIgcGg0LW5zIGFic29sdXRlXCI+XG4gICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiZjUgZjQtbnMgdGxcIj5Ub21teSBUcmFu4oCUUG9ydGZvbGlvPC9oMT5cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApXG4gICAgICAgIH1cbiAgICAgIDwvaGVhZGVyPlxuICAgICAgPG1haW4+e2NoaWxkcmVufTwvbWFpbj5cbiAgICA8L2RpdiA+XG4gIClcbn0iXX0= */\n/*@ sourceURL=/Users/tmytrn/portfolio-tmytrn/components/layout.js */")) : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "2239467019",
+  }, "body{background-color:rgb(190,191,210);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpQ2UsQUFFc0Qsa0NBQ3ZDIiwiZmlsZSI6Ii9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBzdHlsZXMgZnJvbSAnLi9sYXlvdXQubW9kdWxlLmNzcydcbmltcG9ydCB1dGlsU3R5bGVzIGZyb20gJy4uL3N0eWxlcy91dGlscy5tb2R1bGUuY3NzJ1xuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuXG5jb25zdCBuYW1lID0gJ1RvbW15IFRyYW4nXG5leHBvcnQgY29uc3Qgc2l0ZVRpdGxlID0gJ1RvbW15IFRyYW4nXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExheW91dCh7IGNoaWxkcmVuLCBob21lLCBwb3J0Zm9saW9Ib21lLCBwb3J0Zm9saW9Qcm9qZWN0IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmNvbnRhaW5lcn0+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPntzaXRlVGl0bGV9PC90aXRsZT5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIGhyZWY9XCIvZmF2aWNvbi5wbmdcIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwiZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnVybFwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb21cIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOmltYWdlXCIgY29udGVudD1cImh0dHBzOi8vdG15dHJuLmNvbS9pbWFnZXMvdG9tbXktdHJhbi1AdG15dHJuLXdlYnNpdGUtcG9ydHJhaXQtMjAyMC1ieS1iZW5qYW1pbi1zaW9yZGlhLmpwZ1wiIC8+XG4gICAgICAgIDxtZXRhIHByb3BlcnR5PVwib2c6ZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnR5cGVcIiBjb250ZW50PVwid2Vic2l0ZVwiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ0d2l0dGVyOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjpzaXRlXCIgY29udGVudD1cIkB0bXl0cm5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjppbWFnZVwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb20vaW1hZ2VzL3RvbW15LXRyYW4tQHRteXRybi13ZWJzaXRlLXBvcnRyYWl0LTIwMjAtYnktYmVuamFtaW4tc2lvcmRpYS5qcGdcIiAvPlxuICAgICAgICA8bGluayByZWw9XCJzdHlsZXNoZWV0XCIgaHJlZj1cImh0dHBzOi8vdW5wa2cuY29tL3RhY2h5b25zQDQuMTIuMC9jc3MvdGFjaHlvbnMubWluLmNzc1wiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8aGVhZGVyIGNsYXNzTmFtZT17c3R5bGVzLmhlYWRlcn0+XG4gICAgICAgIHsoaG9tZSkgPyAoXG4gICAgICAgICAgPD5cbiAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICAgICAgICB7YGJvZHkge1xuICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTkwLCAxOTEsIDIxMCk7XG4gICAgICAgICAgICAgIH1gXG4gICAgICAgICAgICAgIH08L3N0eWxlPlxuICAgICAgICAgIDwvPlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD5cbiAgICAgICAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+XG4gICAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICAgIH08L3N0eWxlPlxuXG4gICAgICAgICAgICA8Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb0hvbWUpID8gKFxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm13OSBjZW50ZXIgcGgyIHBoNC1ucyBuYXYtaGVhZGVyXCI+XG4gICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJmMyBmMi1ucyB0bFwiPlRvbW15IFRyYW7igJRQb3J0Zm9saW88L2gxPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICA8L3N0eWxlPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb1Byb2plY3QpID8gKFxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXc5IGNlbnRlciBwaDIgcGg0LW5zIGFic29sdXRlXCI+XG4gICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiZjUgZjQtbnMgdGxcIj5Ub21teSBUcmFu4oCUUG9ydGZvbGlvPC9oMT5cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApXG4gICAgICAgIH1cbiAgICAgIDwvaGVhZGVyPlxuICAgICAgPG1haW4+e2NoaWxkcmVufTwvbWFpbj5cbiAgICA8L2RpdiA+XG4gIClcbn0iXX0= */\n/*@ sourceURL=/Users/tmytrn/portfolio-tmytrn/components/layout.js */")) : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2654145579",
     __self: this
-  }, "body{background-color:#eeeeee;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5Q2lCLEFBRXFELHlCQUM1QiIsImZpbGUiOiIvVXNlcnMvdG15dHJuL3BvcnRmb2xpby10bXl0cm4vY29tcG9uZW50cy9sYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgc3R5bGVzIGZyb20gJy4vbGF5b3V0Lm1vZHVsZS5jc3MnXG5pbXBvcnQgdXRpbFN0eWxlcyBmcm9tICcuLi9zdHlsZXMvdXRpbHMubW9kdWxlLmNzcydcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcblxuY29uc3QgbmFtZSA9ICdUb21teSBUcmFuJ1xuZXhwb3J0IGNvbnN0IHNpdGVUaXRsZSA9ICdUb21teSBUcmFuJ1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMYXlvdXQoeyBjaGlsZHJlbiwgaG9tZSwgcG9ydGZvbGlvSG9tZSwgcG9ydGZvbGlvUHJvamVjdCB9KSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5jb250YWluZXJ9PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT57c2l0ZVRpdGxlfTwvdGl0bGU+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiBocmVmPVwiL2Zhdmljb24ucG5nXCIgLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzp0aXRsZVwiIGNvbnRlbnQ9XCJUb21teSBUcmFuXCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cImRlc2NyaXB0aW9uXCIgY29udGVudD1cIlRvbW15IFRyYW4gaXMgYSBkaWdpdGFsIGRlc2lnbmVyIGFuZCBkZXZlbG9wZXIgYmFzZWQgaW4gTG9zIEFuZ2VsZXMuXG4gICAgSGUgaG9sZHMgYSBCLlMuIGluIENvbXB1dGVyIFNjaWVuY2UgZnJvbSBTRlNVLiBIZSBiZWxpZXZlcyB0aGF0IGdyZWF0XG4gICAgZGVzaWduIHRlbGxzIGEgc3RvcnksIGFuZCBzaG91bGQgZmVlbCBlZmZvcnRsZXNzLlwiLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzp1cmxcIiBjb250ZW50PVwiaHR0cHM6Ly90bXl0cm4uY29tXCIgLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzppbWFnZVwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb20vaW1hZ2VzL3RvbW15LXRyYW4tQHRteXRybi13ZWJzaXRlLXBvcnRyYWl0LTIwMjAtYnktYmVuamFtaW4tc2lvcmRpYS5qcGdcIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOmRlc2NyaXB0aW9uXCIgY29udGVudD1cIlRvbW15IFRyYW4gaXMgYSBkaWdpdGFsIGRlc2lnbmVyIGFuZCBkZXZlbG9wZXIgYmFzZWQgaW4gTG9zIEFuZ2VsZXMuXG4gICAgSGUgaG9sZHMgYSBCLlMuIGluIENvbXB1dGVyIFNjaWVuY2UgZnJvbSBTRlNVLiBIZSBiZWxpZXZlcyB0aGF0IGdyZWF0XG4gICAgZGVzaWduIHRlbGxzIGEgc3RvcnksIGFuZCBzaG91bGQgZmVlbCBlZmZvcnRsZXNzLlwiLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzp0eXBlXCIgY29udGVudD1cIndlYnNpdGVcIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjp0aXRsZVwiIGNvbnRlbnQ9XCJUb21teSBUcmFuXCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInR3aXR0ZXI6c2l0ZVwiIGNvbnRlbnQ9XCJAdG15dHJuXCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInR3aXR0ZXI6aW1hZ2VcIiBjb250ZW50PVwiaHR0cHM6Ly90bXl0cm4uY29tL2ltYWdlcy90b21teS10cmFuLUB0bXl0cm4td2Vic2l0ZS1wb3J0cmFpdC0yMDIwLWJ5LWJlbmphbWluLXNpb3JkaWEuanBnXCIgLz5cbiAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCJodHRwczovL3VucGtnLmNvbS90YWNoeW9uc0A0LjEyLjAvY3NzL3RhY2h5b25zLm1pbi5jc3NcIiAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPGhlYWRlciBjbGFzc05hbWU9e3N0eWxlcy5oZWFkZXJ9PlxuICAgICAgICB7KGhvbWUpID8gKFxuICAgICAgICAgIDw+XG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE5MCwgMTkxLCAyMTApO1xuICAgICAgICAgICAgICB9YFxuICAgICAgICAgICAgICB9PC9zdHlsZT5cbiAgICAgICAgICA8Lz5cbiAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDw+XG4gICAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICAgICAgICAgIHtgYm9keSB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWVlZWVlO1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGBcbiAgICAgICAgICAgICAgICB9PC9zdHlsZT5cblxuICAgICAgICAgICAgPC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgeyhwb3J0Zm9saW9Ib21lKSA/IChcbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdzkgY2VudGVyIHBoMiBwaDQtbnMgbmF2LWhlYWRlclwiPlxuICAgICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiZjMgZjItbnMgdGxcIj5Ub21teSBUcmFu4oCUUG9ydGZvbGlvPC9oMT5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+XG4gICAgICAgICAgICAgIHtgYm9keSB7XG4gICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWVlZWVlO1xuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGBcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgPC9zdHlsZT5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDw+PC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgeyhwb3J0Zm9saW9Qcm9qZWN0KSA/IChcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm13OSBjZW50ZXIgcGgyIHBoNC1ucyBhYnNvbHV0ZVwiPlxuICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImY1IGY0LW5zIHRsXCI+VG9tbXkgVHJhbuKAlFBvcnRmb2xpbzwvaDE+XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDw+PC8+XG4gICAgICAgICAgKVxuICAgICAgICB9XG4gICAgICA8L2hlYWRlcj5cbiAgICAgIDxtYWluPntjaGlsZHJlbn08L21haW4+XG4gICAgPC9kaXYgPlxuICApXG59Il19 */\n/*@ sourceURL=/Users/tmytrn/portfolio-tmytrn/components/layout.js */")), portfolioHome ? __jsx("div", {
-    className: "jsx-2540943747",
+  }, "body{background-color:#f4f4f4;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5Q2lCLEFBRXFELHlCQUM1QiIsImZpbGUiOiIvVXNlcnMvdG15dHJuL3BvcnRmb2xpby10bXl0cm4vY29tcG9uZW50cy9sYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgc3R5bGVzIGZyb20gJy4vbGF5b3V0Lm1vZHVsZS5jc3MnXG5pbXBvcnQgdXRpbFN0eWxlcyBmcm9tICcuLi9zdHlsZXMvdXRpbHMubW9kdWxlLmNzcydcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcblxuY29uc3QgbmFtZSA9ICdUb21teSBUcmFuJ1xuZXhwb3J0IGNvbnN0IHNpdGVUaXRsZSA9ICdUb21teSBUcmFuJ1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMYXlvdXQoeyBjaGlsZHJlbiwgaG9tZSwgcG9ydGZvbGlvSG9tZSwgcG9ydGZvbGlvUHJvamVjdCB9KSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5jb250YWluZXJ9PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT57c2l0ZVRpdGxlfTwvdGl0bGU+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiBocmVmPVwiL2Zhdmljb24ucG5nXCIgLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzp0aXRsZVwiIGNvbnRlbnQ9XCJUb21teSBUcmFuXCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cImRlc2NyaXB0aW9uXCIgY29udGVudD1cIlRvbW15IFRyYW4gaXMgYSBkaWdpdGFsIGRlc2lnbmVyIGFuZCBkZXZlbG9wZXIgYmFzZWQgaW4gTG9zIEFuZ2VsZXMuXG4gICAgSGUgaG9sZHMgYSBCLlMuIGluIENvbXB1dGVyIFNjaWVuY2UgZnJvbSBTRlNVLiBIZSBiZWxpZXZlcyB0aGF0IGdyZWF0XG4gICAgZGVzaWduIHRlbGxzIGEgc3RvcnksIGFuZCBzaG91bGQgZmVlbCBlZmZvcnRsZXNzLlwiLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzp1cmxcIiBjb250ZW50PVwiaHR0cHM6Ly90bXl0cm4uY29tXCIgLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzppbWFnZVwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb20vaW1hZ2VzL3RvbW15LXRyYW4tQHRteXRybi13ZWJzaXRlLXBvcnRyYWl0LTIwMjAtYnktYmVuamFtaW4tc2lvcmRpYS5qcGdcIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOmRlc2NyaXB0aW9uXCIgY29udGVudD1cIlRvbW15IFRyYW4gaXMgYSBkaWdpdGFsIGRlc2lnbmVyIGFuZCBkZXZlbG9wZXIgYmFzZWQgaW4gTG9zIEFuZ2VsZXMuXG4gICAgSGUgaG9sZHMgYSBCLlMuIGluIENvbXB1dGVyIFNjaWVuY2UgZnJvbSBTRlNVLiBIZSBiZWxpZXZlcyB0aGF0IGdyZWF0XG4gICAgZGVzaWduIHRlbGxzIGEgc3RvcnksIGFuZCBzaG91bGQgZmVlbCBlZmZvcnRsZXNzLlwiLz5cbiAgICAgICAgPG1ldGEgcHJvcGVydHk9XCJvZzp0eXBlXCIgY29udGVudD1cIndlYnNpdGVcIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjp0aXRsZVwiIGNvbnRlbnQ9XCJUb21teSBUcmFuXCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInR3aXR0ZXI6c2l0ZVwiIGNvbnRlbnQ9XCJAdG15dHJuXCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInR3aXR0ZXI6aW1hZ2VcIiBjb250ZW50PVwiaHR0cHM6Ly90bXl0cm4uY29tL2ltYWdlcy90b21teS10cmFuLUB0bXl0cm4td2Vic2l0ZS1wb3J0cmFpdC0yMDIwLWJ5LWJlbmphbWluLXNpb3JkaWEuanBnXCIgLz5cbiAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCJodHRwczovL3VucGtnLmNvbS90YWNoeW9uc0A0LjEyLjAvY3NzL3RhY2h5b25zLm1pbi5jc3NcIiAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPGhlYWRlciBjbGFzc05hbWU9e3N0eWxlcy5oZWFkZXJ9PlxuICAgICAgICB7KGhvbWUpID8gKFxuICAgICAgICAgIDw+XG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE5MCwgMTkxLCAyMTApO1xuICAgICAgICAgICAgICB9YFxuICAgICAgICAgICAgICB9PC9zdHlsZT5cbiAgICAgICAgICA8Lz5cbiAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDw+XG4gICAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICAgICAgICAgIHtgYm9keSB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjRmNGY0O1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGBcbiAgICAgICAgICAgICAgICB9PC9zdHlsZT5cblxuICAgICAgICAgICAgPC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgeyhwb3J0Zm9saW9Ib21lKSA/IChcbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdzkgY2VudGVyIHBoMiBwaDQtbnMgbmF2LWhlYWRlclwiPlxuICAgICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiZjMgZjItbnMgdGxcIj5Ub21teSBUcmFu4oCUUG9ydGZvbGlvPC9oMT5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+XG4gICAgICAgICAgICAgIHtgYm9keSB7XG4gICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjRmNGY0O1xuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGBcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgPC9zdHlsZT5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDw+PC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgeyhwb3J0Zm9saW9Qcm9qZWN0KSA/IChcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm13OSBjZW50ZXIgcGgyIHBoNC1ucyBhYnNvbHV0ZVwiPlxuICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImY1IGY0LW5zIHRsXCI+VG9tbXkgVHJhbuKAlFBvcnRmb2xpbzwvaDE+XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDw+PC8+XG4gICAgICAgICAgKVxuICAgICAgICB9XG4gICAgICA8L2hlYWRlcj5cbiAgICAgIDxtYWluPntjaGlsZHJlbn08L21haW4+XG4gICAgPC9kaXYgPlxuICApXG59Il19 */\n/*@ sourceURL=/Users/tmytrn/portfolio-tmytrn/components/layout.js */")), portfolioHome ? __jsx("div", {
+    className: "jsx-149944093",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -182,7 +182,7 @@ function Layout(_ref) {
       columnNumber: 11
     }
   }, __jsx("div", {
-    className: "jsx-2540943747" + " " + "mw9 center ph2 ph4-ns nav-header",
+    className: "jsx-149944093" + " " + "mw9 center ph2 ph4-ns nav-header",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -190,7 +190,7 @@ function Layout(_ref) {
       columnNumber: 13
     }
   }, __jsx("h1", {
-    className: "jsx-2540943747" + " " + "f3 f2-ns tl",
+    className: "jsx-149944093" + " " + "f3 f2-ns tl",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -198,9 +198,9 @@ function Layout(_ref) {
       columnNumber: 15
     }
   }, "Tommy Tran\u2014Portfolio")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "2540943747",
+    id: "149944093",
     __self: this
-  }, "body{background-color:#eeeeee;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1RGUsQUFFNEMseUJBQ3pCIiwiZmlsZSI6Ii9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBzdHlsZXMgZnJvbSAnLi9sYXlvdXQubW9kdWxlLmNzcydcbmltcG9ydCB1dGlsU3R5bGVzIGZyb20gJy4uL3N0eWxlcy91dGlscy5tb2R1bGUuY3NzJ1xuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuXG5jb25zdCBuYW1lID0gJ1RvbW15IFRyYW4nXG5leHBvcnQgY29uc3Qgc2l0ZVRpdGxlID0gJ1RvbW15IFRyYW4nXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExheW91dCh7IGNoaWxkcmVuLCBob21lLCBwb3J0Zm9saW9Ib21lLCBwb3J0Zm9saW9Qcm9qZWN0IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmNvbnRhaW5lcn0+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPntzaXRlVGl0bGV9PC90aXRsZT5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIGhyZWY9XCIvZmF2aWNvbi5wbmdcIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwiZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnVybFwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb21cIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOmltYWdlXCIgY29udGVudD1cImh0dHBzOi8vdG15dHJuLmNvbS9pbWFnZXMvdG9tbXktdHJhbi1AdG15dHJuLXdlYnNpdGUtcG9ydHJhaXQtMjAyMC1ieS1iZW5qYW1pbi1zaW9yZGlhLmpwZ1wiIC8+XG4gICAgICAgIDxtZXRhIHByb3BlcnR5PVwib2c6ZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnR5cGVcIiBjb250ZW50PVwid2Vic2l0ZVwiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ0d2l0dGVyOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjpzaXRlXCIgY29udGVudD1cIkB0bXl0cm5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjppbWFnZVwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb20vaW1hZ2VzL3RvbW15LXRyYW4tQHRteXRybi13ZWJzaXRlLXBvcnRyYWl0LTIwMjAtYnktYmVuamFtaW4tc2lvcmRpYS5qcGdcIiAvPlxuICAgICAgICA8bGluayByZWw9XCJzdHlsZXNoZWV0XCIgaHJlZj1cImh0dHBzOi8vdW5wa2cuY29tL3RhY2h5b25zQDQuMTIuMC9jc3MvdGFjaHlvbnMubWluLmNzc1wiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8aGVhZGVyIGNsYXNzTmFtZT17c3R5bGVzLmhlYWRlcn0+XG4gICAgICAgIHsoaG9tZSkgPyAoXG4gICAgICAgICAgPD5cbiAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICAgICAgICB7YGJvZHkge1xuICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTkwLCAxOTEsIDIxMCk7XG4gICAgICAgICAgICAgIH1gXG4gICAgICAgICAgICAgIH08L3N0eWxlPlxuICAgICAgICAgIDwvPlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD5cbiAgICAgICAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+XG4gICAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNlZWVlZWU7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICAgIH08L3N0eWxlPlxuXG4gICAgICAgICAgICA8Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb0hvbWUpID8gKFxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm13OSBjZW50ZXIgcGgyIHBoNC1ucyBuYXYtaGVhZGVyXCI+XG4gICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJmMyBmMi1ucyB0bFwiPlRvbW15IFRyYW7igJRQb3J0Zm9saW88L2gxPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNlZWVlZWU7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICA8L3N0eWxlPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb1Byb2plY3QpID8gKFxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXc5IGNlbnRlciBwaDIgcGg0LW5zIGFic29sdXRlXCI+XG4gICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiZjUgZjQtbnMgdGxcIj5Ub21teSBUcmFu4oCUUG9ydGZvbGlvPC9oMT5cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApXG4gICAgICAgIH1cbiAgICAgIDwvaGVhZGVyPlxuICAgICAgPG1haW4+e2NoaWxkcmVufTwvbWFpbj5cbiAgICA8L2RpdiA+XG4gIClcbn0iXX0= */\n/*@ sourceURL=/Users/tmytrn/portfolio-tmytrn/components/layout.js */")) : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null), portfolioProject ? __jsx("div", {
+  }, "body{background-color:#f4f4f4;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1RGUsQUFFNEMseUJBQ3pCIiwiZmlsZSI6Ii9Vc2Vycy90bXl0cm4vcG9ydGZvbGlvLXRteXRybi9jb21wb25lbnRzL2xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBzdHlsZXMgZnJvbSAnLi9sYXlvdXQubW9kdWxlLmNzcydcbmltcG9ydCB1dGlsU3R5bGVzIGZyb20gJy4uL3N0eWxlcy91dGlscy5tb2R1bGUuY3NzJ1xuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuXG5jb25zdCBuYW1lID0gJ1RvbW15IFRyYW4nXG5leHBvcnQgY29uc3Qgc2l0ZVRpdGxlID0gJ1RvbW15IFRyYW4nXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExheW91dCh7IGNoaWxkcmVuLCBob21lLCBwb3J0Zm9saW9Ib21lLCBwb3J0Zm9saW9Qcm9qZWN0IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmNvbnRhaW5lcn0+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPntzaXRlVGl0bGV9PC90aXRsZT5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIGhyZWY9XCIvZmF2aWNvbi5wbmdcIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwiZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnVybFwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb21cIiAvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOmltYWdlXCIgY29udGVudD1cImh0dHBzOi8vdG15dHJuLmNvbS9pbWFnZXMvdG9tbXktdHJhbi1AdG15dHJuLXdlYnNpdGUtcG9ydHJhaXQtMjAyMC1ieS1iZW5qYW1pbi1zaW9yZGlhLmpwZ1wiIC8+XG4gICAgICAgIDxtZXRhIHByb3BlcnR5PVwib2c6ZGVzY3JpcHRpb25cIiBjb250ZW50PVwiVG9tbXkgVHJhbiBpcyBhIGRpZ2l0YWwgZGVzaWduZXIgYW5kIGRldmVsb3BlciBiYXNlZCBpbiBMb3MgQW5nZWxlcy5cbiAgICBIZSBob2xkcyBhIEIuUy4gaW4gQ29tcHV0ZXIgU2NpZW5jZSBmcm9tIFNGU1UuIEhlIGJlbGlldmVzIHRoYXQgZ3JlYXRcbiAgICBkZXNpZ24gdGVsbHMgYSBzdG9yeSwgYW5kIHNob3VsZCBmZWVsIGVmZm9ydGxlc3MuXCIvPlxuICAgICAgICA8bWV0YSBwcm9wZXJ0eT1cIm9nOnR5cGVcIiBjb250ZW50PVwid2Vic2l0ZVwiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ0d2l0dGVyOnRpdGxlXCIgY29udGVudD1cIlRvbW15IFRyYW5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjpzaXRlXCIgY29udGVudD1cIkB0bXl0cm5cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidHdpdHRlcjppbWFnZVwiIGNvbnRlbnQ9XCJodHRwczovL3RteXRybi5jb20vaW1hZ2VzL3RvbW15LXRyYW4tQHRteXRybi13ZWJzaXRlLXBvcnRyYWl0LTIwMjAtYnktYmVuamFtaW4tc2lvcmRpYS5qcGdcIiAvPlxuICAgICAgICA8bGluayByZWw9XCJzdHlsZXNoZWV0XCIgaHJlZj1cImh0dHBzOi8vdW5wa2cuY29tL3RhY2h5b25zQDQuMTIuMC9jc3MvdGFjaHlvbnMubWluLmNzc1wiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8aGVhZGVyIGNsYXNzTmFtZT17c3R5bGVzLmhlYWRlcn0+XG4gICAgICAgIHsoaG9tZSkgPyAoXG4gICAgICAgICAgPD5cbiAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICAgICAgICB7YGJvZHkge1xuICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTkwLCAxOTEsIDIxMCk7XG4gICAgICAgICAgICAgIH1gXG4gICAgICAgICAgICAgIH08L3N0eWxlPlxuICAgICAgICAgIDwvPlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD5cbiAgICAgICAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+XG4gICAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICAgIH08L3N0eWxlPlxuXG4gICAgICAgICAgICA8Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb0hvbWUpID8gKFxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm13OSBjZW50ZXIgcGgyIHBoNC1ucyBuYXYtaGVhZGVyXCI+XG4gICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJmMyBmMi1ucyB0bFwiPlRvbW15IFRyYW7igJRQb3J0Zm9saW88L2gxPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgICAge2Bib2R5IHtcbiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICA8L3N0eWxlPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApfVxuICAgICAgICB7KHBvcnRmb2xpb1Byb2plY3QpID8gKFxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXc5IGNlbnRlciBwaDIgcGg0LW5zIGFic29sdXRlXCI+XG4gICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiZjUgZjQtbnMgdGxcIj5Ub21teSBUcmFu4oCUUG9ydGZvbGlvPC9oMT5cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICApIDogKFxuICAgICAgICAgICAgPD48Lz5cbiAgICAgICAgICApXG4gICAgICAgIH1cbiAgICAgIDwvaGVhZGVyPlxuICAgICAgPG1haW4+e2NoaWxkcmVufTwvbWFpbj5cbiAgICA8L2RpdiA+XG4gIClcbn0iXX0= */\n/*@ sourceURL=/Users/tmytrn/portfolio-tmytrn/components/layout.js */")) : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null), portfolioProject ? __jsx("div", {
     className: "mw9 center ph2 ph4-ns absolute",
     __self: this,
     __source: {
@@ -798,7 +798,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "\n  .airbnb_iphoneWrapper__2_WaP {\n    height: 480px;\n    overflow: scroll;\n  }\n  .airbnb_iphone__1vkPc img{\n    width: 75%;\n  }\n\n  @media only screen and (max-width: 600px) {\n    .airbnb_me__314Gx {\n      margin-top: -6rem;\n    }\n    .airbnb_iphoneWrapper__2_WaP {\n      height: 600px;\n    }\n  }\n\n  .airbnb_features__1CkVs {\n    top: 50%;\n  }\n\n  .airbnb_nav-header__1ZDjE{\n    color: #fff;\n  }", "",{"version":3,"sources":["/Users/tmytrn/portfolio-tmytrn/styles/airbnb.module.css"],"names":[],"mappings":";EACE;IACE,aAAa;IACb,gBAAgB;EAClB;EACA;IACE,UAAU;EACZ;;EAEA;IACE;MACE,iBAAiB;IACnB;IACA;MACE,aAAa;IACf;EACF;;EAEA;IACE,QAAQ;EACV;;EAEA;IACE,WAAW;EACb","file":"airbnb.module.css","sourcesContent":["\n  .iphoneWrapper {\n    height: 480px;\n    overflow: scroll;\n  }\n  .iphone img{\n    width: 75%;\n  }\n\n  @media only screen and (max-width: 600px) {\n    .me {\n      margin-top: -6rem;\n    }\n    .iphoneWrapper {\n      height: 600px;\n    }\n  }\n\n  .features {\n    top: 50%;\n  }\n\n  .nav-header{\n    color: #fff;\n  }"]}]);
+exports.push([module.i, "\n  .airbnb_iphoneWrapper__2_WaP {\n    height: 600px;\n    overflow: scroll;\n  }\n  .airbnb_iphone__1vkPc img{\n    width: 75%;\n  }\n\n  @media only screen and (max-width: 600px) {\n    .airbnb_me__314Gx {\n      margin-top: -6rem;\n    }\n    .airbnb_iphoneWrapper__2_WaP {\n      height: 600px;\n    }\n  }\n  .airbnb_features__1CkVs {\n    top: 50%;\n  }\n\n  .airbnb_nav-header__1ZDjE{\n    color: #fff;\n  }", "",{"version":3,"sources":["/Users/tmytrn/portfolio-tmytrn/styles/airbnb.module.css"],"names":[],"mappings":";EACE;IACE,aAAa;IACb,gBAAgB;EAClB;EACA;IACE,UAAU;EACZ;;EAEA;IACE;MACE,iBAAiB;IACnB;IACA;MACE,aAAa;IACf;EACF;EACA;IACE,QAAQ;EACV;;EAEA;IACE,WAAW;EACb","file":"airbnb.module.css","sourcesContent":["\n  .iphoneWrapper {\n    height: 600px;\n    overflow: scroll;\n  }\n  .iphone img{\n    width: 75%;\n  }\n\n  @media only screen and (max-width: 600px) {\n    .me {\n      margin-top: -6rem;\n    }\n    .iphoneWrapper {\n      height: 600px;\n    }\n  }\n  .features {\n    top: 50%;\n  }\n\n  .nav-header{\n    color: #fff;\n  }"]}]);
 // Exports
 exports.locals = {
 	"iphoneWrapper": "airbnb_iphoneWrapper__2_WaP",
@@ -6440,7 +6440,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function AirbnbJournals() {
   var styles = {
     airbnbStyle: {
-      color: "#555555"
+      color: "#333333"
     },
     grey: {
       color: "#555555"
@@ -6487,7 +6487,7 @@ function AirbnbJournals() {
       columnNumber: 17
     }
   }), __jsx("div", {
-    className: "mw9 center ph4",
+    className: "mw8 center ph4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6503,7 +6503,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("div", {
-    className: "fl w-100 w-25-ns mb4 mt4 pr1-l",
+    className: "fl w-100 w-25-ns mt4 pt1 pr1-l",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6511,7 +6511,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("p", {
-    className: "f5 mv0 b",
+    className: "f6 mv0 b",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6519,7 +6519,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Date"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-ns measure pb3",
+    className: "db lh-copy mv0 f6 measure pb3",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6527,7 +6527,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "April 2020"), __jsx("p", {
-    className: "f5 mv0 b",
+    className: "f6 mv0 b",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6535,7 +6535,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Timeline"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-ns measure pb3",
+    className: "db lh-copy mv0 f6 measure pb3",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6543,7 +6543,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "48 hours"), __jsx("p", {
-    className: "f5 mv0 b",
+    className: "f6 mv0 b",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6551,7 +6551,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Team"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-ns measure",
+    className: "db lh-copy mv0 f6 measure",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6559,7 +6559,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Angelo Saraceno"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-ns measure",
+    className: "db lh-copy mv0 f6 measure",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6567,7 +6567,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Renaise Kim"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-ns measure pb3",
+    className: "db lh-copy mv0 f6 measure pb3",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6575,7 +6575,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Tommy Tran"), __jsx("p", {
-    className: "f5 mv0 b",
+    className: "f6 mv0 b",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6583,7 +6583,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Tools"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-ns measure",
+    className: "db lh-copy mv0 f6 measure",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6591,7 +6591,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Adobe XD, Figma")), __jsx("div", {
-    className: "fl w-100 w-75-l mb5",
+    className: "fl w-100 w-75-l",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6599,7 +6599,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("h1", {
-    className: "fw6 f2 mb-ns mt4-l lh-title fl w-100 red",
+    className: "fw6 f3 mt4 lh-title fl w-100 red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6607,7 +6607,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, "Airbnb Journals"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-m f4-l measure",
+    className: "db lh-copy mv0 f6 f5-ns measure",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6622,7 +6622,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-m f4-l measure",
+    className: "db lh-copy mv0 f6 f5-ns measure",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6639,7 +6639,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("span", {
-    "class": "b red",
+    className: "b red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6647,7 +6647,7 @@ function AirbnbJournals() {
       columnNumber: 37
     }
   }, " Try the prototype."))))), __jsx("div", {
-    className: "fr pt5 pb5 w-100 w-75-l bt b--black-05",
+    className: "fl fr-ns pt3 pb3 w-100 w-75-ns bt b--black-05",
     style: styles.airbnbStyle,
     __self: this,
     __source: {
@@ -6656,7 +6656,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mb-ns mt3-l lh-title fl w-100 red ",
+    className: "fw6 f4 mt3-l lh-title fl w-100 red ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6664,7 +6664,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, "Challenge"), __jsx("p", {
-    className: "db lh-copy mv0 f6 f5-m f4-l measure",
+    className: "db lh-copy f5-ns measure",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6672,7 +6672,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, "In a mobile app, provide a way to combine photos and/or notes and transform their shared family trips into immersive stories about the culture and destinations they visit. What if that solution combined a traditional pledge with a fun new way to spread the word, visually, through social media?")), __jsx("div", {
-    className: "fr pt5 pb5 w-100 w-75-l bt b--black-05 ",
+    className: "fl fr-ns pt3 pb3 w-100 w-75-ns bt b--black-05 ",
     style: styles.airbnbStyle,
     __self: this,
     __source: {
@@ -6681,7 +6681,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mb-ns mt3-l lh-title fl w-100 red",
+    className: "fw6 f4 mt3-l lh-title fl w-100 red ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6689,7 +6689,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, "Scope"), __jsx("p", {
-    className: "db lh-copy mt0 f5 f4-m f4-l measure",
+    className: "db lh-copy mt0 f6 f5-ns measure",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6712,7 +6712,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6727,7 +6727,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6742,7 +6742,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6757,7 +6757,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6765,7 +6765,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, "Allowing people to learn, favorite and save stories, discuss, and safely connect")))), __jsx("div", {
-    className: "fr pt5 pb5 w-100 w-75-l bt b--black-05",
+    className: "fl fr-ns pt3 pb3 w-100 w-75-ns bt b--black-05",
     style: styles.airbnbStyle,
     __self: this,
     __source: {
@@ -6774,7 +6774,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mb-ns mt3-l lh-title fl w-100 red",
+    className: "fw6 f4 mt3-l lh-title fl w-100-ns red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6797,7 +6797,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6812,7 +6812,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6827,7 +6827,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6842,7 +6842,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6850,7 +6850,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, "Is visual design used in a thoughtful and meaningful way?")))), __jsx("div", {
-    className: "fr pt5 pb5 w-100 w-75-l bt b--black-05",
+    className: "fr pt3 pb3 w-100 w-75-l bt b--black-05",
     style: styles.airbnbStyle,
     __self: this,
     __source: {
@@ -6859,7 +6859,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mb-ns mt3-l lh-title fl w-100 red",
+    className: "fw6 f4 mb-ns mt3-l lh-title fl w-100 red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6875,7 +6875,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("p", {
-    className: " b f6 f5-m f4-l",
+    className: " b f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6906,7 +6906,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: " f6 f5-m f4-l ",
+    className: " f6 f5-ns ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6921,7 +6921,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6936,7 +6936,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6951,7 +6951,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6966,7 +6966,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -6982,7 +6982,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("p", {
-    className: " b f6 f5-m f4-l",
+    className: " b f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7013,7 +7013,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7028,7 +7028,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7043,7 +7043,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7058,7 +7058,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7073,7 +7073,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7089,7 +7089,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("p", {
-    className: " b f6 f5-m f4-l",
+    className: " b f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7120,7 +7120,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7135,7 +7135,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7150,7 +7150,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "f6 f5-m f4-l",
+    className: "f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7158,7 +7158,7 @@ function AirbnbJournals() {
       columnNumber: 37
     }
   }, "Present"))))), __jsx("div", {
-    className: "fr pt5 pb5 w-100 bt b--black-05",
+    className: "fr pt3 pb3 w-100  w-75-l bt b--black-05",
     style: styles.airbnbStyle,
     __self: this,
     __source: {
@@ -7167,7 +7167,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("h1", {
-    className: "fw6 f2 mb-ns mt3-l lh-title fl w-100 red",
+    className: "fw6 f3 mt3-l lh-title fl w-100 red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7190,7 +7190,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7205,7 +7205,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7220,7 +7220,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7228,7 +7228,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, "Organizing travel information post and pre experiences")))), __jsx("div", {
-    className: "fr pt5 pb5 w-100 bt b--black-05",
+    className: "fr pt3 pb3 w-100 bt b--black-05",
     style: styles.airbnbStyle,
     __self: this,
     __source: {
@@ -7237,7 +7237,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mb3-ns lh-title tc w-100 red",
+    className: "fw6 f4 mb3-ns lh-title tc w-100 red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7272,7 +7272,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("div", {
-    className: "fl w-100 w-50-l",
+    className: "fl w-100 w-40-l",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7280,7 +7280,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mt3-l lh-title fl w-100 red",
+    className: "fw6 f4 mt3-l lh-title fl w-100 red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7305,7 +7305,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l b red",
+    className: "lh-copy f6 f5-ns b red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7321,7 +7321,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l b red",
+    className: "lh-copy f6 f5-ns b red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7337,7 +7337,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l b red",
+    className: "lh-copy f6 f5-ns b red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7353,7 +7353,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l b red",
+    className: "lh-copy f6 f5-ns b red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7369,7 +7369,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l b red",
+    className: "lh-copy f6 f5-ns b red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7384,7 +7384,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7399,7 +7399,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7414,7 +7414,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7429,7 +7429,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7444,7 +7444,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7459,7 +7459,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7474,7 +7474,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "lh-copy f6 f5-m f5-l",
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7482,7 +7482,7 @@ function AirbnbJournals() {
       columnNumber: 37
     }
   }, "Rebook completed trips")))), __jsx("div", {
-    className: "fl w-100 w-50-l",
+    className: "fl w-100 w-60-l",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7508,6 +7508,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }), __jsx("p", {
+    className: "lh-copy f6 f5-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7524,7 +7525,7 @@ function AirbnbJournals() {
       columnNumber: 21
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mb-ns mt3-l lh-title fl w-100 tc red",
+    className: "fw6 f4 mb-ns mt3-l lh-title fl w-100 tc red",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7532,7 +7533,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, "Visual Design Inspiration"), __jsx("p", {
-    className: "lh-copy mv0 ph5-l f6 f5-m f4-l pb5 tc w-100",
+    className: "lh-copy mv0 ph5-l f6 f5-ns pb5 tc w-100",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7548,7 +7549,7 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("div", {
-    className: "fn fl-ns w-third-ns ph1",
+    className: "fn fl-ns w-third-ns ph4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7556,7 +7557,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l",
+    className: "b lh-copy f6 f5-ns tc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7564,7 +7565,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, "Feature Logotypes"), __jsx("img", {
-    className: "w-100 w-60-l pb3",
+    className: "w-100  pb3",
     src: "/Journals/Luxe.png",
     alt: "airbnb",
     __self: this,
@@ -7574,7 +7575,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }), __jsx("img", {
-    className: "w-100 w-60-l",
+    className: "w-100 ",
     src: "/Journals/Plus.jpg",
     alt: "airbnb",
     __self: this,
@@ -7584,7 +7585,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   })), __jsx("div", {
-    className: "fn fl-ns w-third-ns ph1",
+    className: "fn fl-ns w-third-ns ph4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7592,7 +7593,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l",
+    className: "b lh-copy f6 f5-ns tc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7600,7 +7601,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, "Current Home Page"), __jsx("img", {
-    className: " w-100 w-75-l",
+    className: " w-100 ",
     src: "/Journals/Current_Home.png",
     alt: "airbnb",
     __self: this,
@@ -7610,7 +7611,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   })), __jsx("div", {
-    className: "fn fl-ns w-third-ns ph1",
+    className: "fn fl-ns w-third-ns ph4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7618,7 +7619,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l",
+    className: "b lh-copy f6 f5-ns tc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7626,7 +7627,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, "Online Experiences"), __jsx("img", {
-    className: " w-100 w-75-l",
+    className: " w-100 ",
     src: "/Journals/Online_Experiences.png",
     alt: "airbnb",
     __self: this,
@@ -7644,7 +7645,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l",
+    className: "b lh-copy f6 f5-ns tc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7670,7 +7671,7 @@ function AirbnbJournals() {
       columnNumber: 17
     }
   }, __jsx("div", {
-    className: "mw9 center ph4",
+    className: "mw8 center ph4",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7695,7 +7696,7 @@ function AirbnbJournals() {
       columnNumber: 29
     }
   }, __jsx("h1", {
-    className: "fw6 f3 mb3-ns lh-title tc w-100 white",
+    className: "fw6 f4 mb3-ns lh-title tc w-100 white",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7703,7 +7704,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, "Final Design"), __jsx("p", {
-    className: "lh-copy mv0 ph5-l f6 f5-m f4-l pb5 tc w-100 white",
+    className: "lh-copy mv0 ph5-l f6 f5-ns pb5 tc w-100 white",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7727,7 +7728,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l tc white",
+    className: "b lh-copy f6 f5-ns tc white",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7761,7 +7762,7 @@ function AirbnbJournals() {
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l tc white",
+    className: "b lh-copy f6 f5-ns tc white",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7786,20 +7787,28 @@ function AirbnbJournals() {
       lineNumber: 375,
       columnNumber: 41
     }
-  }))), __jsx("div", {
+  })), __jsx("p", {
+    className: " lh-copy f6 white tc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 377,
+      columnNumber: 37
+    }
+  }, "(try scrolling on each screen)")), __jsx("div", {
     className: "fl-ns w-100 w-third-ns ph1 ph3-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 378,
+      lineNumber: 381,
       columnNumber: 33
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l tc white",
+    className: "b lh-copy f6 f5-ns tc white",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 379,
+      lineNumber: 382,
       columnNumber: 37
     }
   }, "Journals Mementos"), __jsx("div", {
@@ -7807,7 +7816,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 382,
+      lineNumber: 385,
       columnNumber: 37
     }
   }, __jsx("img", {
@@ -7817,27 +7826,11 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 383,
+      lineNumber: 386,
       columnNumber: 41
     }
-  })))), __jsx("p", {
-    className: "w-100 tc white mv3 dn db-ns",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 388,
-      columnNumber: 29
-    }
-  }, " (try scrolling on each screen)")), __jsx("div", {
+  }))))), __jsx("div", {
     className: "fl w-100 mv5",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 390,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "fl w-50 w-third-ns ph1 ph3-ns pv3 ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -7845,11 +7838,19 @@ function AirbnbJournals() {
       columnNumber: 25
     }
   }, __jsx("div", {
-    className: "w-100 w-80-ns center",
+    className: "fl w-50 w-third-ns ph1 ph3-ns pv3 ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 392,
+      columnNumber: 25
+    }
+  }, __jsx("div", {
+    className: "w-100 w-80-ns center",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 393,
       columnNumber: 29
     }
   }, __jsx("video", {
@@ -7860,7 +7861,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 393,
+      lineNumber: 394,
       columnNumber: 33
     }
   }, __jsx("source", {
@@ -7870,7 +7871,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 394,
+      lineNumber: 395,
       columnNumber: 37
     }
   })))), __jsx("div", {
@@ -7878,23 +7879,23 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 398,
+      lineNumber: 399,
       columnNumber: 25
     }
   }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l near-white ",
+    className: "b lh-copy f6 f5-ns near-white ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 399,
+      lineNumber: 400,
       columnNumber: 29
     }
   }, "Journals Features"), __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l measure v-mid center near-white",
+    className: "lh-copy f6 f5-ns measure near-white",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 402,
+      lineNumber: 403,
       columnNumber: 29
     }
   }, " Find new trip ideas through the Journals homepage. Each Journal shows rich details about each trip like locations that guests went to, photos they took, and the Airbnb they stayed at. This adds value to previous trips that groups make, and helps soon-to-be guests choose where to make their next stay."))), __jsx("div", {
@@ -7902,39 +7903,39 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 409,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "fl-ns w-75 w-two-thirds ph1 ph4-ns pb3 mt6 tr",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 410,
       columnNumber: 25
     }
-  }, __jsx("p", {
-    className: "b lh-copy f6 f5-m f4-l near-white ",
+  }, __jsx("div", {
+    className: "fl-ns w-75 w-two-thirds ph1 ph4-ns pb3 mt6 tr-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 411,
-      columnNumber: 29
+      columnNumber: 25
     }
-  }, "Adding Mementos"), __jsx("p", {
-    className: "lh-copy f6 f5-m f4-l measure v-mid center near-white",
+  }, __jsx("p", {
+    className: "b lh-copy f6 f5-ns near-white ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 414,
+      lineNumber: 412,
       columnNumber: 29
     }
-  }, " Collect memorabilia like souvenirs, stickers, and stamps to personalize your Journals.")), __jsx("div", {
+  }, "Adding Mementos"), __jsx("p", {
+    className: "fl fr-ns lh-copy f6 f5-ns measure near-white",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 415,
+      columnNumber: 29
+    }
+  }, " Photos, videos, and text can be added in the mementos tab. This serves as a central hub of media for all group members. Collect memorabilia like souvenirs, stickers, and stamps to further personalize your Journals.")), __jsx("div", {
     className: "fl w-50 w-third-ns ph1 ph3-ns pv3 ",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 419,
+      lineNumber: 422,
       columnNumber: 25
     }
   }, __jsx("div", {
@@ -7942,7 +7943,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 420,
+      lineNumber: 423,
       columnNumber: 29
     }
   }, __jsx("video", {
@@ -7953,7 +7954,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 421,
+      lineNumber: 424,
       columnNumber: 29
     }
   }, __jsx("source", {
@@ -7963,7 +7964,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 422,
+      lineNumber: 425,
       columnNumber: 33
     }
   }))))), __jsx("div", {
@@ -7971,15 +7972,15 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 428,
+      lineNumber: 431,
       columnNumber: 17
     }
   }, __jsx("h1", {
-    className: "f3 f1-ns",
+    className: "f4 f1-ns",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 429,
+      lineNumber: 432,
       columnNumber: 21
     }
   }, __jsx("a", {
@@ -7988,7 +7989,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 430,
+      lineNumber: 433,
       columnNumber: 25
     }
   }, "Try the Adobe XD prototype", __jsx("span", {
@@ -7996,7 +7997,7 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 431,
+      lineNumber: 434,
       columnNumber: 55
     }
   }, "\u2197"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -8004,15 +8005,15 @@ function AirbnbJournals() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 434,
+      lineNumber: 437,
       columnNumber: 21
     }
   }, __jsx("a", {
-    className: "white f3 link underline",
+    className: "white f5 link underline",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 435,
+      lineNumber: 438,
       columnNumber: 21
     }
   }, " \u2190 Go back Home.")))))));
@@ -8142,7 +8143,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fportfolio%2FAirbnbJournals&absolutePagePath=%2FUsers%2Ftmytrn%2Fportfolio-tmytrn%2Fpages%2Fportfolio%2FAirbnbJournals.js ***!
   \***********************************************************************************************************************************************************************/
@@ -8165,5 +8166,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=AirbnbJournals.js.map

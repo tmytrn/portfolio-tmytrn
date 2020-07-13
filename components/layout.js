@@ -40,7 +40,7 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
             <>
               <style jsx global>
                 {`body {
-                           background-color: #eeeeee;
+                           background-color: #f4f4f4;
                         }
                 `
                 }</style>
@@ -54,7 +54,7 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
             </div>
             <style jsx global>
               {`body {
-                  background-color: #eeeeee;
+                  background-color: #f4f4f4;
                   }
                 `
               }
