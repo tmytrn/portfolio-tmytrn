@@ -49,7 +49,7 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
           )}
         {(portfolioHome) ? (
           <div>
-            <div className="mw9 center ph2 ph4-ns nav-header">
+            <div className="mw8 center ph2 ph4-ns nav-header">
               <h1 className="f3 f2-ns tl">Tommy Tran—Portfolio</h1>
             </div>
             <style jsx global>
@@ -65,7 +65,11 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
           )}
         {(portfolioProject) ? (
           <div className="mw9 center ph2 ph4-ns absolute">
-            <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
+            <Link href="/portfolio">
+              <a className="link underline color">
+                <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
+              </a>
+            </Link>
           </div>
 
         ) : (
