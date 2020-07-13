@@ -22,26 +22,26 @@ export default function AirbnbJournals() {
         backgroundAttachment: "fixed",
     }
     return (
-        <Layout>
+        <Layout portfolioProject>
             <Head></Head>
             <div style={styles.airbnbStyle}>
                 <div
                     className=" vh-50 vh-75-ns cover bg-center"
                     style={hero}
                 ></div>
-                <div className="mw8 center ph4">
+                <div className="mw9 center ph4">
                     <div className="w-100 cf fl" >
                         <div className="fl w-100 w-25-ns mb4 mt4 pr1-l" >
-                            <p className="f4 mv0 b" >Date</p>
-                            <p className="db lh-copy mv0 f6 f5-m f4-l measure pb3">April 2020</p>
-                            <p className="f4 mv0 b">Timeline</p>
-                            <p className="db lh-copy mv0 f6 f5-m f4-l measure pb3">48 hours</p>
-                            <p className="f4 mv0 b">Team</p>
-                            <p className="db lh-copy mv0 f6 f5-m f4-l measure">Angelo Saraceno</p>
-                            <p className="db lh-copy mv0 f6 f5-m f4-l measure">Renaise Kim</p>
-                            <p className="db lh-copy mv0 f6 f5-m f4-l measure pb3">Tommy Tran</p>
-                            <p className="f4 mv0 b">Tools</p>
-                            <p className="db lh-copy mv0 f6 f5-m f4-l measure">Adobe XD, Figma</p>
+                            <p className="f5 mv0 b" >Date</p>
+                            <p className="db lh-copy mv0 f6 f5-ns measure pb3">April 2020</p>
+                            <p className="f5 mv0 b">Timeline</p>
+                            <p className="db lh-copy mv0 f6 f5-ns measure pb3">48 hours</p>
+                            <p className="f5 mv0 b">Team</p>
+                            <p className="db lh-copy mv0 f6 f5-ns measure">Angelo Saraceno</p>
+                            <p className="db lh-copy mv0 f6 f5-ns measure">Renaise Kim</p>
+                            <p className="db lh-copy mv0 f6 f5-ns measure pb3">Tommy Tran</p>
+                            <p className="f5 mv0 b">Tools</p>
+                            <p className="db lh-copy mv0 f6 f5-ns measure">Adobe XD, Figma</p>
                         </div>
                         <div className="fl w-100 w-75-l mb5">
                             <h1 className="fw6 f2 mb-ns mt4-l lh-title fl w-100 red">Airbnb Journals</h1>
@@ -350,7 +350,7 @@ export default function AirbnbJournals() {
                     </div>
                 </div>
                 <div className="fl w-100 bg-orange">
-                    <div className="mw8 center ph4">
+                    <div className="mw9 center ph4">
                         <div className="fr pt5 pb5 w-100 bt b--black-05" style={styles.airbnbStyle}>
                             <div className="">
                                 <h1 className="fw6 f3 mb3-ns lh-title tc w-100 white">Final Design</h1>

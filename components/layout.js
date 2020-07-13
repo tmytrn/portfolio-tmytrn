@@ -6,7 +6,7 @@ import Link from 'next/link'
 const name = 'Tommy Tran'
 export const siteTitle = 'Tommy Tran'
 
-export default function Layout({ children, home, portfolioHome }) {
+export default function Layout({ children, home, portfolioHome, portfolioProject }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -38,6 +38,12 @@ export default function Layout({ children, home, portfolioHome }) {
           </>
         ) : (
             <>
+              <style jsx global>
+                {`body {
+                           background-color: #eeeeee;
+                        }
+                `
+                }</style>
 
             </>
           )}
@@ -48,29 +54,26 @@ export default function Layout({ children, home, portfolioHome }) {
             </div>
             <style jsx global>
               {`body {
-                           background-color: #eeeeee;
-                        }
+                  background-color: #eeeeee;
+                  }
                 `
               }
             </style>
           </div>
         ) : (
-            <div>
-              <div className="mw9 center ph2 ph4-ns absolute">
-                <h1 className="f6 f5-ns tl white-ns ">Tommy Tran—Portfolio</h1>
-              </div>
-
-              <style jsx global>
-                {`body {
-                           background-color: #eeeeee;
-                        }
-                `
-
-                }</style>
-            </div>
+            <></>
           )}
+        {(portfolioProject) ? (
+          <div className="mw9 center ph2 ph4-ns absolute">
+            <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
+          </div>
+
+        ) : (
+            <></>
+          )
+        }
       </header>
       <main>{children}</main>
-    </div>
+    </div >
   )
 }
