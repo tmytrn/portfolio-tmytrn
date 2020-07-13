@@ -26,6 +26,16 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
         <meta name="twitter:site" content="@tmytrn" />
         <meta name="twitter:image" content="https://tmytrn.com/images/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg" />
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-165303040-1', 'auto');
+            ga('send', 'pageview');
+              `,
+          }}
+        />
       </Head>
       <header className={styles.header}>
         {(home) ? (

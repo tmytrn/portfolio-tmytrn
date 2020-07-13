@@ -430,9 +430,9 @@ export default function AirbnbJournals() {
                         </div>    
                         
                 <div className="fl w-100 mv5" >
-                    <h1 className="f4 f1-ns">
+                    <h1 className="f4 f3-ns">
                         <a href="https://xd.adobe.com/view/646cc6c0-f4d3-42be-6a0d-ef2c07554647-125d/" className="link near-white underline">
-                            Try the Adobe XD prototype<span className="f3 f1-ns">&#8599;</span>
+                            Try the Adobe XD prototype&#8599;
                         </a>
                     </h1>
                     <Link href="/portfolio">
