@@ -38,21 +38,37 @@ export default function Layout({ children, home, portfolioHome }) {
           </>
         ) : (
             <>
-              <div className="mw8 center ph2 ph4-ns">
-                <h1 className="f3 f2-ns tl">Tommy Tran—Portfolio</h1>
-              </div>
 
             </>
           )}
         {(portfolioHome) ? (
-          <>
+          <div>
+            <div className="mw9 center ph2 ph4-ns nav-header">
+              <h1 className="f3 f2-ns tl">Tommy Tran—Portfolio</h1>
+            </div>
             <style jsx global>
               {`body {
                            background-color: #eeeeee;
-                        }`
-              }</style>
-          </>
-        ) : (<></>)}
+                        }
+                `
+              }
+            </style>
+          </div>
+        ) : (
+            <div>
+              <div className="mw9 center ph2 ph4-ns absolute">
+                <h1 className="f6 f5-ns tl white-ns ">Tommy Tran—Portfolio</h1>
+              </div>
+
+              <style jsx global>
+                {`body {
+                           background-color: #eeeeee;
+                        }
+                `
+
+                }</style>
+            </div>
+          )}
       </header>
       <main>{children}</main>
     </div>
