@@ -60,7 +60,7 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
         {(portfolioHome) ? (
           <div>
             <div className="mw8 center ph2 ph4-ns nav-header">
-              <h1 className="f3 f2-ns tl">Tommy Tran—Portfolio</h1>
+              <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
             </div>
             <style jsx global>
               {`body {

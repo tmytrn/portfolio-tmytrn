@@ -14,7 +14,7 @@ export default function Portfolio({ allProjectData }) {
               <img src={image}></img>
               <h6 className="mv2 fw4">{role}</h6>
               <Link href="/portfolio/[id]" as={`/portfolio/${id}`}>
-              <a className="link color"><h1 className="f4 f3-ns mv0">{title}</h1></a>
+              <a className="link color underline"><h1 className="f4 f3-ns mv0">{title}</h1></a>
               </Link>
               <p>{description}</p>
             </div>
