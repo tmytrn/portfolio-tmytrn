@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Tommy Tran'
@@ -48,23 +47,16 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
           </>
         ) : (
             <>
-              <style jsx global>
-                {`body {
-                           background-color: #f4f4f4;
-                        }
-                `
-                }</style>
-
             </>
           )}
         {(portfolioHome) ? (
           <div>
-            <div className="mw8 center ph2 ph4-ns nav-header">
-              <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
+            <div className="mw9 center ph3 ph5-ns">
+              <h1 className="f5 f4-ns tl">Tommy Tran</h1>
             </div>
             <style jsx global>
               {`body {
-                  background-color: #f4f4f4;
+                  background-color: #fffefa;
                   }
                 `
               }
@@ -74,12 +66,20 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
             <></>
           )}
         {(portfolioProject) ? (
-          <div className="mw9 center ph2 ph4-ns absolute">
-            <Link href="/portfolio">
-              <a className="link underline color">
-                <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
-              </a>
-            </Link>
+          <div>
+            <div className="mw9 center ph2 ph4-ns absolute">
+              <Link href="/portfolio">
+                <a className="link underline color">
+                  <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
+                </a>
+              </Link>
+            </div>
+            <style jsx global>
+              {`body {
+              background-color: #f4f4f4;
+                                
+            }`
+              }</style>
           </div>
 
         ) : (

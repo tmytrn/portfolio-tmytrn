@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function CB({ allProjectData }) {
     const hero = {
-        backgroundImage: "url(/CB_Hero.png)",
+        backgroundImage: "url(/CB.png)",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
     }
