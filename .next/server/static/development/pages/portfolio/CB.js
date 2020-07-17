@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -112,42 +112,6 @@ module.exports = require("next/dist/next-server/lib/router-context.js");
 /***/ (function(module, exports) {
 
 module.exports = require("next/dist/next-server/lib/utils.js");
-
-/***/ }),
-
-/***/ "./components/date.js":
-/*!****************************!*\
-  !*** ./components/date.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Date; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! date-fns */ "date-fns");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(date_fns__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/tmytrn/portfolio-tmytrn/components/date.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Date({
-  dateString
-}) {
-  const date = Object(date_fns__WEBPACK_IMPORTED_MODULE_1__["parseISO"])(dateString);
-  return __jsx("time", {
-    dateTime: dateString,
-    className: "fw4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 10
-    }
-  }, Object(date_fns__WEBPACK_IMPORTED_MODULE_1__["format"])(date, ' — yyyy'));
-}
 
 /***/ }),
 
@@ -438,105 +402,6 @@ module.exports = {
 	"backToHome": "layout_backToHome__1vZsp",
 	"blue": "layout_blue__3iNdQ"
 };
-
-/***/ }),
-
-/***/ "./lib/projects.js":
-/*!*************************!*\
-  !*** ./lib/projects.js ***!
-  \*************************/
-/*! exports provided: getSortedProjectData, getAllProjectIds, getProjectData */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getSortedProjectData", function() { return getSortedProjectData; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAllProjectIds", function() { return getAllProjectIds; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getProjectData", function() { return getProjectData; });
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */ "fs");
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */ "path");
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gray-matter */ "gray-matter");
-/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gray_matter__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var remark__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! remark */ "remark");
-/* harmony import */ var remark__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(remark__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var remark_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! remark-html */ "remark-html");
-/* harmony import */ var remark_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(remark_html__WEBPACK_IMPORTED_MODULE_4__);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-const postsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(process.cwd(), 'projects');
-function getSortedProjectData() {
-  // Get file names under /posts
-  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readdirSync(postsDirectory);
-  const allProjectData = fileNames.map(fileName => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, ''); // Read markdown file as string
-
-    const fullPath = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(postsDirectory, fileName);
-    const fileContents = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readFileSync(fullPath, 'utf8'); // Use gray-matter to parse the post metadata section
-
-    const matterResult = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContents); // Combine the data with the id
-
-    return _objectSpread({
-      id
-    }, matterResult.data);
-  }); // Sort posts by date
-
-  return allProjectData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
-}
-function getAllProjectIds() {
-  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readdirSync(postsDirectory); // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
-
-  return fileNames.map(fileName => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
-    };
-  });
-}
-async function getProjectData(id) {
-  const fullPath = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(postsDirectory, `${id}.md`);
-  const fileContents = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readFileSync(fullPath, 'utf8'); // Use gray-matter to parse the post metadata section
-
-  const matterResult = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContents); // Use remark to convert markdown into HTML string
-
-  const processedContent = await remark__WEBPACK_IMPORTED_MODULE_3___default()().use(remark_html__WEBPACK_IMPORTED_MODULE_4___default.a).process(matterResult.content);
-  const contentHtml = processedContent.toString(); // Combine the data with the id and contentHtml
-
-  return _objectSpread({
-    id,
-    contentHtml
-  }, matterResult.data);
-}
 
 /***/ }),
 
@@ -2209,263 +2074,150 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/portfolio/index.js":
-/*!**********************************!*\
-  !*** ./pages/portfolio/index.js ***!
-  \**********************************/
-/*! exports provided: default, getStaticProps */
+/***/ "./pages/portfolio/CB.js":
+/*!*******************************!*\
+  !*** ./pages/portfolio/CB.js ***!
+  \*******************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Portfolio; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CB; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/layout */ "./components/layout.js");
-/* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/date */ "./components/date.js");
-/* harmony import */ var _lib_projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../lib/projects */ "./lib/projects.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! framer-motion */ "framer-motion");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/tmytrn/portfolio-tmytrn/pages/portfolio/index.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/tmytrn/portfolio-tmytrn/pages/portfolio/CB.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-
-const transition = {
-  duration: 1,
-  ease: [0.43, 0.13, 0.23, 0.96]
-};
-const thumbnailVariants = {
-  initial: {
-    scale: 0.9,
-    opacity: 0
-  },
-  animate: {
-    scale: 1,
-    opacity: 1,
-    transition
-  }
-};
-function Portfolio({
+function CB({
   allProjectData
 }) {
-  return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_6__["motion"].div, {
-    exit: {
-      opacity: 0
-    },
-    initial: "initial",
-    animate: "animate",
+  const hero = {
+    backgroundImage: "url(/CB.png)",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed"
+  };
+  return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    portfolioProject: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 5
-    }
-  }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    portfolioHome: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 7
+      lineNumber: 12,
+      columnNumber: 9
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
+      lineNumber: 13,
+      columnNumber: 13
     }
   }), __jsx("div", {
-    className: "mw9 center ph3 ph5-ns",
+    className: "vh-75 cover bg-center",
+    style: hero,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 9
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
+    className: "w-100 center ph3 ph4-m ph5-l",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
     }
   }, __jsx("div", {
-    class: "cf",
+    className: "f4 f2-ns measure w-100 pb5",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 11
+      lineNumber: 17,
+      columnNumber: 17
     }
-  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_6__["motion"].div, {
-    variants: thumbnailVariants,
+  }, __jsx("h1", {
+    className: "fw6 f2 mb-ns mt3-l fl w-100",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 21
+    }
+  }, "Chorizo Burrito"), __jsx("p", {
+    className: "db lh-copy mv0 f5 f4-m f3-l measure",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 21
+    }
+  }, "Chorizo Burrito is a general interest blog. Inspired by ", __jsx("a", {
+    href: "http://publicannouncement.org",
+    className: "link b color underline",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 81
+    }
+  }, "publicannouncement.org"), ", it shares a selection of carefully considered articles and images. Content is updated through twitter, the easiest and most simple form of CMS.", __jsx("a", {
+    href: "https://github.com/tmytrn/Chorizo-Burrito",
+    className: "link color b underline",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 17
+    }
+  }, " See GitHub. "))), __jsx("div", {
+    className: "tc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
-      columnNumber: 13
-    }
-  }, allProjectData.map(({
-    id,
-    date,
-    title,
-    description,
-    role,
-    image
-  }) => __jsx("div", {
-    className: "fl w-100 w-50-ns pr3 project grow hide-child",
-    key: id,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
       columnNumber: 17
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    href: "/portfolio/[id]",
-    as: `/portfolio/${id}`,
+  }, __jsx("h1", {
+    className: "f2",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 19
-    }
-  }, __jsx("a", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 72
-    }
-  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_6__["motion"].img, {
-    className: "w-100",
-    src: image,
-    transition: transition,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 21
-    }
-  }))), __jsx("div", {
-    className: "absolute left-1 bottom-1 bg-white outline color pa2 child",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 19
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    href: "/portfolio/[id]",
-    as: `/portfolio/${id}`,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 26,
       columnNumber: 21
     }
   }, __jsx("a", {
+    href: "http://chorizoburrito.org",
     className: "link color underline",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 23
-    }
-  }, __jsx("h1", {
-    className: "f5 f4-ns  mv0",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 27,
       columnNumber: 25
     }
-  }, title, __jsx(_components_date__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    dateString: date,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 27
-    }
-  })))), __jsx("h6", {
-    className: "mv2 fw4 f6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 21
-    }
-  }, role)))))))));
-}
-async function getStaticProps() {
-  const allProjectData = Object(_lib_projects__WEBPACK_IMPORTED_MODULE_4__["getSortedProjectData"])();
-  return {
-    props: {
-      allProjectData
-    }
-  };
+  }, "Enter ChorizoBurrito.org")))));
 }
 
 /***/ }),
 
-/***/ 5:
-/*!****************************************!*\
-  !*** multi ./pages/portfolio/index.js ***!
-  \****************************************/
+/***/ 6:
+/*!*************************************!*\
+  !*** multi ./pages/portfolio/CB.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/tmytrn/portfolio-tmytrn/pages/portfolio/index.js */"./pages/portfolio/index.js");
+module.exports = __webpack_require__(/*! /Users/tmytrn/portfolio-tmytrn/pages/portfolio/CB.js */"./pages/portfolio/CB.js");
 
-
-/***/ }),
-
-/***/ "date-fns":
-/*!***************************!*\
-  !*** external "date-fns" ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("date-fns");
-
-/***/ }),
-
-/***/ "framer-motion":
-/*!********************************!*\
-  !*** external "framer-motion" ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("framer-motion");
-
-/***/ }),
-
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("fs");
-
-/***/ }),
-
-/***/ "gray-matter":
-/*!******************************!*\
-  !*** external "gray-matter" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("gray-matter");
 
 /***/ }),
 
@@ -2477,17 +2229,6 @@ module.exports = require("gray-matter");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "path":
-/*!***********************!*\
-  !*** external "path" ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("path");
 
 /***/ }),
 
@@ -2535,28 +2276,6 @@ module.exports = require("react-is");
 
 /***/ }),
 
-/***/ "remark":
-/*!*************************!*\
-  !*** external "remark" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("remark");
-
-/***/ }),
-
-/***/ "remark-html":
-/*!******************************!*\
-  !*** external "remark-html" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("remark-html");
-
-/***/ }),
-
 /***/ "styled-jsx/style":
 /*!***********************************!*\
   !*** external "styled-jsx/style" ***!
@@ -2580,4 +2299,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=portfolio.js.map
+//# sourceMappingURL=CB.js.map

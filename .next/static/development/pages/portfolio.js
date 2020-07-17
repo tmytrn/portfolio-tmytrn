@@ -34139,7 +34139,7 @@ function Portfolio(_ref) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fportfolio&absolutePagePath=%2FUsers%2Ftmytrn%2Fportfolio-tmytrn%2Fpages%2Fportfolio%2Findex.js ***!
   \*********************************************************************************************************************************************/
@@ -34162,5 +34162,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=portfolio.js.map
