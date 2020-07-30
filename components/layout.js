@@ -16,14 +16,14 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
     He holds a B.S. in Computer Science from SFSU. He believes that great
     design tells a story, and should feel effortless."/>
         <meta property="og:url" content="https://tmytrn.com" />
-        <meta property="og:image" content="https://tmytrn.com/images/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg" />
+        <meta property="og:image" content="https://tmytrn.com/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg" />
         <meta property="og:description" content="Tommy Tran is a digital designer and developer based in Los Angeles.
     He holds a B.S. in Computer Science from SFSU. He believes that great
     design tells a story, and should feel effortless."/>
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Tommy Tran" />
         <meta name="twitter:site" content="@tmytrn" />
-        <meta name="twitter:image" content="https://tmytrn.com/images/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg" />
+        <meta name="twitter:image" content="https://tmytrn.com/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg" />
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
         <script async src='https://www.google-analytics.com/analytics.js'></script>
         <script
