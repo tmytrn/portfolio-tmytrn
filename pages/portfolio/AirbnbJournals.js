@@ -12,25 +12,19 @@ export default function AirbnbJournals() {
             color: "#555555"
         },
     };
-
-    const listStyle = {
-        listStylePosition: "outside"
-    }
     const hero = {
-        backgroundImage: "url(/Journals/AirbnbJournals_Hero.png)",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
+        backgroundImage: "url(/Journals/AirbnbJournals_Hero.png)"
     }
     return (
         <Layout portfolioProject>
             <Head></Head>
-            <div style={styles.airbnbStyle}>
+            <div style={styles.airbnbStyle} >
                 <div
-                    className=" vh-50 vh-75-ns cover bg-center"
+                    className="vh-75 cover bg-center"
                     style={hero}
                 ></div>
-                <div className="mw8 center ph4">
-                    <div className="w-100 cf fl" >
+                <div className=" mw8 center ph4">
+                    <div className="w-100" >
                         <div className="fl w-100 w-25-ns mt4 pt1 pr1-l" >
                             <p className="f6 mv0 b" >Date</p>
                             <p className="db lh-copy mv0 f6 measure pb3">April 2020</p>
@@ -76,7 +70,7 @@ export default function AirbnbJournals() {
                             A storytelling app may optionally serve families or friends who
                             travel together best by:
             </p>
-                        <ul className="pl3 measure">
+                        <ul className="fl pl3 measure">
                             <li>
                                 <p className="f6 f5-ns">
                                     Giving group members a way to create a single trip or
@@ -104,7 +98,7 @@ export default function AirbnbJournals() {
                     </div>
                     <div className="fl fr-ns pt3 pb3 w-100 w-75-l bt b--black-05" style={styles.airbnbStyle}>
                         <h1 className="fw6 f4 mt3-l lh-title fl w-100 red">Evaluation</h1>
-                        <ul className="pl3 measure" >
+                        <ul className="fl pl3 measure" >
                             <li>
                                 <p className="lh-copy f6 f5-ns">
                                     Does the solution address a target audience and their needs?
@@ -218,7 +212,7 @@ export default function AirbnbJournals() {
                     </div>
                     <div className="fr pt3 pb3 w-100  w-75-l bt b--black-05" style={styles.airbnbStyle}>
                         <h1 className="fw6 f3 mv3-l lh-title fl w-100 red">How might we build compelling experiences that encourage engagement?</h1>
-                        <ul className=" pl3 pb3">
+                        <ul className="fl pl3 pb3">
                             <li>
                                 <p className="lh-copy f6 f5-ns">
                                     Sharing travel experiences and contributing is difficult
@@ -245,7 +239,7 @@ export default function AirbnbJournals() {
                     <div className="fl pv5 w-100 bt b--black-05" style={styles.airbnbStyle}>
                         <div className="fl w-100 w-40-l">
                             <h1 className="fw6 f4 lh-title fl w-100 red">Feature Selection</h1>
-                            <ul className="pl3" style={listStyle}>
+                            <ul className="fl pl3">
                                 <li className="">
                                     <p className="lh-copy f6 f5-ns b red">
                                         Collaborative album

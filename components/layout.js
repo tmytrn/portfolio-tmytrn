@@ -10,6 +10,7 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
     <div className={styles.container}>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"></meta>
         <link rel="icon" href="/favicon.png" />
         <meta property="og:title" content="Tommy Tran" />
         <meta name="description" content="Tommy Tran is a digital designer and developer based in Los Angeles.
@@ -67,7 +68,7 @@ export default function Layout({ children, home, portfolioHome, portfolioProject
           )}
         {(portfolioProject) ? (
           <div>
-            <div className="mw9 center ph2 ph4-ns absolute">
+            <div className="z-1 mw8 center ph2 ph4-ns absolute">
               <Link href="/portfolio">
                 <a className="link underline color">
                   <h1 className="f5 f4-ns tl">Tommy Tran—Portfolio</h1>
