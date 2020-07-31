@@ -383,28 +383,28 @@ export default function AirbnbJournals() {
                                 </div>
                             </div>
                         </div>
-                        <div className="fl w-100 ph5 ph0-ns mv3 mv6-ns center">
-                        <div className="fl w-100 w-third-ns ph1 ph4-ns pv3 ">
-                            <div className="w-100 w-80-ns center-ns">
+                        <div className="fl w-100 ph4 ph0-ns mv3 mv6-ns center">
+                        <div className="fl w-100 w-third-ns ph1 ph4-ns mb3">
+                            <div className="w-100 w-100-ns center-ns">
                                 <video autoPlay loop muted className="w-100">
                                     <source src="/Journals/TeamAdobo_AirbnbCreativeJam_Submission.mp4" type="video/mp4" alt="airbnb"></source>
                                 </video>
                             </div>
                         </div>
-                        <div className="fl-ns w-100 w-two-thirds-ns ph1 ph4-ns pb3 mt6-ns">
+                        <div className="fl w-100 w-two-thirds-ns ph1 ph4-ns pb3 mt6-ns">
                             <p className="b lh-copy f6 f5-ns near-white ">
                                 Journals Features
                             </p>
-                            <p className="lh-copy f6 f5-ns measure near-white"> Find new trip ideas through the Journals homepage.
+                            <p className="fl lh-copy f6 f5-ns measure near-white"> Find new trip ideas through the Journals homepage.
                             Each Journal shows rich details about each trip
                             like locations that guests went to, photos they took, and the Airbnb they stayed at.
                             This adds value to previous trips that groups make, and helps soon-to-be guests choose where to make their next stay.
                                 </p>
                         </div> 
                         </div>
-                        <div className="fl w-100 ph5 ph0-ns mv3 mv6-ns center"> 
-                        <div className="fl-ns w-100 w-two-thirds-ns ph1 ph4-ns pb3 tr-ns mt6-ns">
-                            <p className="b lh-copy f6 f5-ns near-white ">
+                        <div className="fl w-100 ph4 ph0-ns mv3 mv6-ns center"> 
+                        <div className="fl w-100 w-two-thirds-ns ph1 ph4-ns pb3 tr-ns mt6-ns">
+                            <p className="b fr-ns lh-copy f6 f5-ns near-white ">
                                 Adding Mementos
                             </p>
                             <p className="fl fr-ns lh-copy f6 f5-ns measure near-white"> Photos, videos, and text can be added in the mementos tab.
@@ -415,7 +415,7 @@ export default function AirbnbJournals() {
                         </div> 
                         
                         <div className="fl w-100 w-third-ns ph1 ph4-ns pv3 ">
-                            <div className="w-100 w-80-ns center-ns">
+                            <div className="w-100 w-100-ns center-ns">
                             <video autoPlay loop muted className="w-100 ">
                                 <source src="/Journals/TeamAdobo_AirbnbCreativeJam_Add_To_Journal.mp4" type="video/mp4" alt="airbnb"></source>
                             </video>
