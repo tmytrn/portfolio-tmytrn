@@ -8,9 +8,9 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>…</Head>
-      <div className="pv1-l ph2 ph5-l">
+      <div className="pv1-l ph1 ph5-l">
         <div className={"w-100 w-75-m  w-60-l mb5 relative head "}>
-          <h1 className="f2 f1-l fw6">
+          <h1 className="f2 f1-l">
             Tommy Tran is a digital designer and developer based in Los Angeles.
             He holds a B.S. in Computer Science from SFSU. He applies his
             technological skills in creative projects and new endeavours.

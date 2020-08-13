@@ -24,16 +24,16 @@ body {
   margin-top: -10rem;
   transform: translateX(-50%);
 }
-.behind{
-    z-index: -1;
+.behind {
+  z-index: -1;
 }
 .fade {
   opacity: 0.45;
 }
-.no-underline{
+.no-underline {
   text-decoration: none;
 }
-.no-underline:hover .fade{
+.no-underline:hover .fade {
   opacity: 1 !important;
   text-decoration: none;
 }
@@ -41,17 +41,19 @@ body {
   text-decoration: none;
 }
 .underline:hover {
-    opacity: 1 !important;
-    text-decoration: underline;
-  }
-.color{
-    color: #20215b;
-
+  opacity: 1 !important;
+  text-decoration: underline;
+}
+.color {
+  color: #20215b;
 }
 .head {
-    z-index: 1;
-  }
+  z-index: 1;
+}
 
 .project:last-child {
   margin-right: 0px !important;
+}
+h1 {
+  font-weight: 600;
 }
