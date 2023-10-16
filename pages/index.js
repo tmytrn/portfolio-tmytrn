@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
       <div className="pv1-l ph2 ph5-l">
         <div className={"w-100 w-75-m  w-60-l mb5 relative head "}>
           <h1 className="f2 f1-l">
-            Tommy Tran is a digital designer and developer based in Chicago. He
+            Tommy Tran is a digital designer and developer based in New York. He
             holds a B.S. in Computer Science from SFSU. He applies his
             technological skills in creative projects and new endeavours.
           </h1>
@@ -21,8 +21,7 @@ export default function Home({ allPostsData }) {
             <div className="behind">
               <img
                 src="/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg"
-                alt="tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg"
-              ></img>
+                alt="tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg"></img>
             </div>
             <div className="tl credit ">
               <p className="f6 f5-l mv1">Griffith Park, 2019</p>
@@ -30,8 +29,7 @@ export default function Home({ allPostsData }) {
                 Photo by{" "}
                 <a
                   href="https://twitter.com/bensiordia"
-                  className="underline color"
-                >
+                  className="underline color">
                   Benjamin Siordia
                 </a>
               </p>
@@ -42,32 +40,28 @@ export default function Home({ allPostsData }) {
           <h1 className=" f2 f1-l f-mt0 mv0 db">
             <a
               href="https://www.github.com/tmytrn"
-              className=" no-underline white"
-            >
+              className=" no-underline white">
               @tmytrn <span className="fade">on github</span>
             </a>
           </h1>
           <h1 className=" f2 f1-l f-mt0 mv0  db">
             <a
               href="https://www.linkedin.com/in/tmytrn"
-              className=" no-underline dark-blue"
-            >
+              className=" no-underline dark-blue">
               @tmytrn <span className="fade">on linkedin</span>
             </a>
           </h1>
           <h1 className=" f2 f1-l f-mt0 mv0  db">
             <a
               href="https://www.instagram.com/tmytrn"
-              className=" no-underline light-purple"
-            >
+              className=" no-underline light-purple">
               @tmytrn <span className="fade">on ig</span>
             </a>
           </h1>
           <h1 className=" f2 f1-l f-mt0 mv0  db">
             <a
               href="https://www.twitter.com/tmytrn"
-              className=" no-underline blue"
-            >
+              className=" no-underline blue">
               @tmytrn <span className="fade">on twitter</span>
             </a>
           </h1>
@@ -80,9 +74,8 @@ export default function Home({ allPostsData }) {
             <a
               href="/@tmytrn_CV_2022.pdf"
               className="underline color ph0"
-              download
-            >
-              @tmytrn_CV_2022.pdf
+              download>
+              @tmytrn_CV_2023.pdf
             </a>
           </h1>
         </div>
