@@ -12,8 +12,8 @@ export default function Home({ allPostsData }) {
         <div className={"w-100 w-75-m  w-60-l mb5 relative head "}>
           <h1 className="f2 f1-l">
             Tommy Tran is a digital designer and developer based in New York. He
-            holds a B.S. in Computer Science from SFSU. He applies his
-            technological skills in creative projects and new endeavours.
+            applies his technological skills in creative projects and new
+            endeavours.
           </h1>
         </div>
         <div className={"me w-80 w-60-m w-40-l  el-wrap x"}>
@@ -72,7 +72,7 @@ export default function Home({ allPostsData }) {
           </h1>
           <h1 className=" f2 f1-l f-mt0 mv5 db">
             <a
-              href="/@tmytrn_CV_2022.pdf"
+              href="/@tmytrn_CV_2023.pdf"
               className="underline color ph0"
               download>
               @tmytrn_CV_2023.pdf
