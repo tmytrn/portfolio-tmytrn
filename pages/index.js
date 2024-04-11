@@ -75,7 +75,7 @@ export default function Home({ allPostsData }) {
               href="/@tmytrn_CV_2023.pdf"
               className="underline color ph0"
               download>
-              @tmytrn_CV_2023.pdf
+              @tmytrn_CV_2024.pdf
             </a>
           </h1>
         </div>
