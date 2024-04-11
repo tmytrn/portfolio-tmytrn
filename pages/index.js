@@ -72,7 +72,7 @@ export default function Home({ allPostsData }) {
           </h1>
           <h1 className=" f2 f1-l f-mt0 mv5 db">
             <a
-              href="/@tmytrn_CV_2023.pdf"
+              href="/@tmytrn_CV_2024.pdf"
               className="underline color ph0"
               download>
               @tmytrn_CV_2024.pdf
