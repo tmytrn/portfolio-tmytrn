@@ -57,3 +57,13 @@ body {
 h1 {
   font-weight: 600;
 }
+
+a{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .w-50-xl {
+    width: 50%;
+  }
+}
