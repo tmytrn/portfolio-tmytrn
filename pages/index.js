@@ -40,15 +40,63 @@ export default function Home({ allPostsData }) {
           <div className="mt5 tl tl-l fw6 ls1 relative">
             <div className="ttu f5 f4-l">Select Clients</div>
             <ul className="list lh-copy pl0 f5 f4-l mb0">
-              <li>Public Announcement</li>
-              <li>Collect NYC</li>
-              <li>Benjamin Edgar</li>
-              <li>Reese Cooper</li>
-              <li>Jina Valentine</li>
-              <li>Reginald Sylvester II</li>
-              <li>Cam Hicks</li>
-              <li>Augmented Reality Co</li>
-              <li>THUNK</li>
+              <li>
+                <a
+                  href="https://publicannouncement.org"
+                  className="no-underline">
+                  Public Announcement
+                </a>
+              </li>
+              <li>
+                <a href="https://collect.nyc" className="no-underline">
+                  Collect NYC
+                </a>
+              </li>
+              <li>
+                <a href="https://benjaminedgar.com" className="no-underline">
+                  Benjamin Edgar
+                </a>
+              </li>
+              <li>
+                <a href="https://reese-cooper.com" className="no-underline">
+                  Reese Cooper
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/jina.valentine/"
+                  className="no-underline">
+                  Jina Valentine
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/reginaldsylvester2"
+                  className="no-underline">
+                  Reginald Sylvester II
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/camhicks_/"
+                  className="no-underline">
+                  Cam Hicks
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/augmentedrealityco/"
+                  className="no-underline">
+                  Augmented Reality Co
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/thunkwork/"
+                  className="no-underline">
+                  THUNK
+                </a>
+              </li>
             </ul>
           </div>
           <div className="mt5">
