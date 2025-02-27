@@ -18,6 +18,7 @@
     "remark-html": "^15.0.1"
   },
   "devDependencies": {
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "tachyons-hovers": "^2.5.2"
   }
 }

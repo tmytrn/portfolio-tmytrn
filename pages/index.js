@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
       <div className="pv1-l ph2 ph5-l">
         <div className={"w-100 w-75-m w-60-l w-50-xl mb5 relative head "}>
           <h1 className="f2 f1-l">
-            Tommy Tran is a digital designer and developer based in New York. He
+            Tommy Tran is a web designer and developer based in New York. He
             applies his technological skills in creative projects and new
             endeavours.
           </h1>
@@ -100,7 +100,7 @@ export default function Home({ allPostsData }) {
             </ul>
           </div>
           <div className="mt5">
-            <h1 className=" f2 f1-l f-mt0 mv0 db">
+            {/* <h1 className=" f2 f1-l f-mt0 mv0 db">
               <a
                 href="https://www.github.com/tmytrn"
                 className=" no-underline white pointer:hover">
@@ -127,12 +127,17 @@ export default function Home({ allPostsData }) {
                 className=" no-underline blue pointer:hover">
                 @tmytrn <span className="fade">on twitter</span>
               </a>
-            </h1>
-            <h1 className=" f2 f1-l f-mt0 mv0  db">
+            </h1> */}
+            {/* <h1>
+              <a href="/work" className="underline pointer:hover">
+                Work →
+              </a>
+            </h1> */}
+            <h1 className=" f-mt0 mv0  db">
               <a
                 href="mailto:tommy@tmytrn.com"
-                className=" underline red  pointer:hover">
-                @tmytrn.com, I respond quick.
+                className="underline  pointer:hover">
+                Email: tommy@tmytrn.com
               </a>
             </h1>
           </div>
