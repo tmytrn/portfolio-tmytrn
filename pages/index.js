@@ -48,8 +48,8 @@ export default function Home({ allPostsData }) {
                 </a>
               </li>
               <li>
-                <a href="https://collect.nyc" className="no-underline">
-                  Collect NYC
+                <a href="https://ap.ltd" className="no-underline">
+                  Applied Poetics
                 </a>
               </li>
               <li>
@@ -60,6 +60,11 @@ export default function Home({ allPostsData }) {
               <li>
                 <a href="https://reese-cooper.com" className="no-underline">
                   Reese Cooper
+                </a>
+              </li>
+              <li>
+                <a href="https://urbanjurgensen.com/" className="no-underline">
+                  Urban Jürgensen
                 </a>
               </li>
               <li>
@@ -93,13 +98,6 @@ export default function Home({ allPostsData }) {
                   href="https://www.instagram.com/augmentedrealityco/"
                   className="no-underline">
                   Augmented Reality Co
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/thunkwork/"
-                  className="no-underline">
-                  THUNK
                 </a>
               </li>
             </ul>
