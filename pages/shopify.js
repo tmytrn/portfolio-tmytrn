@@ -47,9 +47,6 @@ export default function Shopify() {
               className="f5 f4-ns fw6 link color no-underline pv3 ph4 dib cta-button">
               Book a scoping call →
             </a>
-            <p className="f5 f4-ns mt4 fade">
-              Built Shopify storefronts for Reese Cooper, Benjamin Edgar, and RC Outdoor Supply.
-            </p>
           </motion.div>
 
           {/* Split two-column section */}
@@ -68,6 +65,12 @@ export default function Shopify() {
                 </li>
                 <li className="mb3">
                   Founders who want one person who can own design + build
+                </li>
+                <li className="mb3">
+                  Stores needing performance audits or conversion optimization
+                </li>
+                <li className="mb3">
+                  Brands wanting to improve email flows and SEO visibility
                 </li>
               </ul>
             </motion.div>
@@ -178,13 +181,13 @@ export default function Shopify() {
                   <span className="fw6">1.</span> Scoping call (20–30 min)
                 </li>
                 <li className="mb3">
-                  <span className="fw6">2.</span> Proposal + timeline
+                  <span className="fw6">2.</span> Proposal covering design, build, audits, and strategy
                 </li>
                 <li className="mb3">
-                  <span className="fw6">3.</span> Design / build
+                  <span className="fw6">3.</span> Implementation: theme builds, email flows, SEO/AI search optimization
                 </li>
                 <li className="mb3">
-                  <span className="fw6">4.</span> Launch
+                  <span className="fw6">4.</span> Performance review and launch support
                 </li>
               </ol>
             </motion.div>
@@ -222,6 +225,16 @@ export default function Shopify() {
               Or email{" "}
               <a href="mailto:tommy@tmytrn.com" className="link underline color">
                 tommy@tmytrn.com
+              </a>
+            </p>
+          </motion.div>
+
+          {/* Cross-link to consulting */}
+          <motion.div variants={fadeInVariants} className="tc mt5 pt4 bt b--black-10">
+            <p className="f5 f4-ns lh-copy">
+              Looking for broader website help?{" "}
+              <a href="/consulting" className="link underline color fw6">
+                Check out web consulting →
               </a>
             </p>
           </motion.div>
