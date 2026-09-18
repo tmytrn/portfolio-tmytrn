@@ -145,6 +145,22 @@ export default function Home({ allPostsData }) {
             </h1>
           </div>
         </div>
+        
+        {/* Services Links */}
+        <div className="pv1-l ph2 ph5-l mt5">
+          <div className="w-100 tc pv4 bt b--black-10">
+            <p className="f4 f3-ns lh-copy ma0">
+              Available for{" "}
+              <Link href="/shopify" className="link underline color fw6">
+                Shopify
+              </Link>
+              {" "}or{" "}
+              <Link href="/consulting" className="link underline color fw6">
+                Web consulting
+              </Link>
+            </p>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
