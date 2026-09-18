@@ -29,9 +29,9 @@ export default function Consulting() {
           `}
         </style>
 
-        <div className="center ph3 ph4-ns pv4 pv5-ns">
+        <div className="mw8 center ph3 ph4-ns pv4 pv5-ns">
           {/* Hero Section */}
-          <motion.div variants={fadeInVariants} className="mb5 mb6-ns mw8 center">
+          <motion.div variants={fadeInVariants} className="mb5 mb6-ns">
             <h1 className="f-hero fw6 lh-solid mb4">
               Web consulting for brands that need a sharp technical partner.
             </h1>
@@ -49,53 +49,51 @@ export default function Consulting() {
           </motion.div>
 
           {/* Split two-column section */}
-          <div className="mw9 center">
-            <div className="flex flex-column flex-row-l mb5 mb6-ns">
-              {/* Who it's for */}
-              <motion.div
-                variants={fadeInVariants}
-                className="w-100 w-50-l pr0 pr4-l mb5 mb0-l pb4 pb0-l bb bn-l b--black-10">
-                <h2 className="f4 f3-ns fw6 ttu ls1 mb4">Who it's for</h2>
-                <ul className="list pl0 f5 f4-ns lh-copy">
-                  <li className="mb3">
-                    Founders needing a second brain on web and Shopify strategy
-                  </li>
-                  <li className="mb3">
-                    Teams stuck mid-rebuild, migration, or vendor handoff
-                  </li>
-                  <li className="mb3">
-                    Brands wanting senior help by the hour, not a full team
-                  </li>
-                </ul>
-              </motion.div>
+          <div className="flex flex-column flex-row-l mb5 mb6-ns pb4 bb b--black-10">
+            {/* Who it's for */}
+            <motion.div
+              variants={fadeInVariants}
+              className="w-100 w-50-l pr0 pr4-l mb4 mb0-l">
+              <h2 className="f4 f3-ns fw6 ttu ls1 mb4">Who it's for</h2>
+              <ul className="list pl0 f5 f4-ns lh-copy">
+                <li className="mb3">
+                  Founders needing a second brain on web and Shopify strategy
+                </li>
+                <li className="mb3">
+                  Teams stuck mid-rebuild, migration, or vendor handoff
+                </li>
+                <li className="mb3">
+                  Brands wanting senior help by the hour, not a full team
+                </li>
+              </ul>
+            </motion.div>
 
-              {/* What you get */}
-              <motion.div
-                variants={fadeInVariants}
-                className="w-100 w-50-l pl0 pl4-l pb4 bb b--black-10">
-                <h2 className="f4 f3-ns fw6 ttu ls1 mb4">What you get</h2>
-                <ul className="list pl0 f5 f4-ns lh-copy">
-                  <li className="mb3">
-                    Scoping, architecture, and vendor selection advice
-                  </li>
-                  <li className="mb3">
-                    Hands-on help with themes, Next.js, Shopify, or marketing sites
-                  </li>
-                  <li className="mb3">
-                    Performance, UX, and conversion reviews
-                  </li>
-                  <li className="mb3">
-                    Optional: ongoing retainers for steady support
-                  </li>
-                </ul>
-              </motion.div>
-            </div>
+            {/* What you get */}
+            <motion.div
+              variants={fadeInVariants}
+              className="w-100 w-50-l pl0 pl4-l">
+              <h2 className="f4 f3-ns fw6 ttu ls1 mb4">What you get</h2>
+              <ul className="list pl0 f5 f4-ns lh-copy">
+                <li className="mb3">
+                  Scoping, architecture, and vendor selection advice
+                </li>
+                <li className="mb3">
+                  Hands-on help with themes, Next.js, Shopify, or marketing sites
+                </li>
+                <li className="mb3">
+                  Performance, UX, and conversion reviews
+                </li>
+                <li className="mb3">
+                  Optional: ongoing retainers for steady support
+                </li>
+              </ul>
+            </motion.div>
           </div>
 
           {/* Proof */}
           <motion.div
             variants={fadeInVariants}
-            className="mb5 mb6-ns pb4 bb b--black-10 mw9 center">
+            className="mb5 mb6-ns pb4 bb b--black-10">
             <h2 className="f4 f3-ns fw6 ttu ls1 mb4 mb5-ns">Proof</h2>
             
             {/* First row - 3 items */}
@@ -108,11 +106,6 @@ export default function Consulting() {
                   rel="noopener noreferrer"
                   className="db link">
                   <div className="browser-window urban-vibe">
-                    <div className="browser-chrome">
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
                     <img
                       src="/images/proof-screenshots/urban-jurgensen.jpg"
                       alt="Urban Jürgensen homepage"
@@ -134,11 +127,6 @@ export default function Consulting() {
                   rel="noopener noreferrer"
                   className="db link">
                   <div className="browser-window scroll-vibe">
-                    <div className="browser-chrome">
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
                     <img
                       src="/images/proof-screenshots/scroll-nyc.jpg"
                       alt="Scroll NYC homepage"
@@ -160,11 +148,6 @@ export default function Consulting() {
                   rel="noopener noreferrer"
                   className="db link">
                   <div className="browser-window willis-vibe">
-                    <div className="browser-chrome">
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
                     <img
                       src="/images/proof-screenshots/willis-tower.jpg"
                       alt="Willis Tower homepage"
@@ -189,11 +172,6 @@ export default function Consulting() {
                   rel="noopener noreferrer"
                   className="db link">
                   <div className="browser-window rodeo-vibe">
-                    <div className="browser-chrome">
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
                     <img
                       src="/images/proof-screenshots/first-rodeo.jpg"
                       alt="First Rodeo homepage"
@@ -215,11 +193,6 @@ export default function Consulting() {
                   rel="noopener noreferrer"
                   className="db link">
                   <div className="browser-window megan-vibe">
-                    <div className="browser-chrome">
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                      <span className="dot"></span>
-                    </div>
                     <img
                       src="/images/proof-screenshots/megan-noelle-low.jpg"
                       alt="Megan Noelle Low homepage"
@@ -235,50 +208,48 @@ export default function Consulting() {
             </div>
           </motion.div>
 
-          <div className="mw9 center">
-            <div className="flex flex-column flex-row-l mb5 mb6-ns">
-              {/* How it works */}
-              <motion.div
-                variants={fadeInVariants}
-                className="w-100 w-50-l pr0 pr4-l mb5 mb0-l pb4 pb0-l bb bn-l b--black-10">
-                <h2 className="f4 f3-ns fw6 ttu ls1 mb4">How it works</h2>
-                <ol className="list pl0 f5 f4-ns lh-copy">
-                  <li className="mb3">
-                    <span className="fw6">1.</span> Scoping call (20–30 min)
-                  </li>
-                  <li className="mb3">
-                    <span className="fw6">2.</span> Recommendation + estimate
-                  </li>
-                  <li className="mb3">
-                    <span className="fw6">3.</span> Hands-on or advisory work
-                  </li>
-                  <li className="mb3">
-                    <span className="fw6">4.</span> Handoff or ongoing retainer
-                  </li>
-                </ol>
-              </motion.div>
+          <div className="flex flex-column flex-row-l mb5 mb6-ns pb4 bb b--black-10">
+            {/* How it works */}
+            <motion.div
+              variants={fadeInVariants}
+              className="w-100 w-50-l pr0 pr4-l mb4 mb0-l">
+              <h2 className="f4 f3-ns fw6 ttu ls1 mb4">How it works</h2>
+              <ol className="list pl0 f5 f4-ns lh-copy">
+                <li className="mb3">
+                  <span className="fw6">1.</span> Scoping call (20–30 min)
+                </li>
+                <li className="mb3">
+                  <span className="fw6">2.</span> Recommendation + estimate
+                </li>
+                <li className="mb3">
+                  <span className="fw6">3.</span> Hands-on or advisory work
+                </li>
+                <li className="mb3">
+                  <span className="fw6">4.</span> Handoff or ongoing retainer
+                </li>
+              </ol>
+            </motion.div>
 
-              {/* Pricing */}
-              <motion.div
-                variants={fadeInVariants}
-                className="w-100 w-50-l pl0 pl4-l pb4 bb b--black-10">
-                <h2 className="f4 f3-ns fw6 ttu ls1 mb4">Pricing</h2>
-                <div>
-                  <p className="f5 f4-ns lh-copy mb2">Consulting from $80/hr</p>
-                  <p className="f5 f4-ns lh-copy mb2">
-                    Short projects and retainers available
-                  </p>
-                  <p className="f6 f5-ns lh-copy fade mt3">
-                    Exact scope determined on the call. Larger builds scoped
-                    separately.
-                  </p>
-                </div>
-              </motion.div>
-            </div>
+            {/* Pricing */}
+            <motion.div
+              variants={fadeInVariants}
+              className="w-100 w-50-l pl0 pl4-l">
+              <h2 className="f4 f3-ns fw6 ttu ls1 mb4">Pricing</h2>
+              <div>
+                <p className="f5 f4-ns lh-copy mb2">Consulting from $80/hr</p>
+                <p className="f5 f4-ns lh-copy mb2">
+                  Short projects and retainers available
+                </p>
+                <p className="f6 f5-ns lh-copy fade mt3">
+                  Exact scope determined on the call. Larger builds scoped
+                  separately.
+                </p>
+              </div>
+            </motion.div>
           </div>
 
           {/* Final CTA */}
-          <motion.div variants={fadeInVariants} className="tc mt5 mt6-ns mw8 center">
+          <motion.div variants={fadeInVariants} className="tc mt5 mt6-ns">
             <h2 className="f3 f2-ns fw6 lh-title mb4">
               Ready to move forward with the right technical partner?
             </h2>
@@ -328,8 +299,7 @@ export default function Consulting() {
             }
             .browser-window {
               background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-              border-radius: 8px;
-              padding: 2rem 1.5rem 1.5rem;
+              padding: 1.5rem;
               box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
@@ -352,22 +322,9 @@ export default function Consulting() {
             .browser-window.megan-vibe {
               background: linear-gradient(135deg, #f4e8d8 0%, #d4c4b0 100%);
             }
-            .browser-chrome {
-              position: relative;
-              display: flex;
-              gap: 6px;
-              margin-bottom: 12px;
-            }
-            .dot {
-              width: 10px;
-              height: 10px;
-              border-radius: 50%;
-              background: rgba(255, 255, 255, 0.3);
-            }
             .browser-screenshot {
               width: 100%;
               height: auto;
-              border-radius: 4px;
               display: block;
             }
           `}
