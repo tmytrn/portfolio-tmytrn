@@ -57,13 +57,16 @@ export default function Consulting() {
               <h2 className="f4 f3-ns fw6 ttu ls1 mb4">Who it's for</h2>
               <ul className="list pl0 f5 f4-ns lh-copy">
                 <li className="mb3">
-                  Founders needing a second brain on web and Shopify strategy
+                  Founders needing a technical partner for web strategy and execution
                 </li>
                 <li className="mb3">
                   Teams stuck mid-rebuild, migration, or vendor handoff
                 </li>
                 <li className="mb3">
                   Brands wanting senior help by the hour, not a full team
+                </li>
+                <li className="mb3">
+                  Sites needing performance audits, SEO optimization, or email flow setup
                 </li>
               </ul>
             </motion.div>
@@ -78,10 +81,16 @@ export default function Consulting() {
                   Scoping, architecture, and vendor selection advice
                 </li>
                 <li className="mb3">
-                  Hands-on help with themes, Next.js, Shopify, or marketing sites
+                  Hands-on help with custom builds, Next.js, or marketing sites
                 </li>
                 <li className="mb3">
-                  Performance, UX, and conversion reviews
+                  Performance audits, UX reviews, and conversion optimization
+                </li>
+                <li className="mb3">
+                  Email flow setup with Mailchimp or Klaviyo
+                </li>
+                <li className="mb3">
+                  SEO and AI search optimization for better visibility
                 </li>
                 <li className="mb3">
                   Optional: ongoing retainers for steady support
@@ -264,6 +273,16 @@ export default function Consulting() {
               Or email{" "}
               <a href="mailto:tommy@tmytrn.com" className="link underline color">
                 tommy@tmytrn.com
+              </a>
+            </p>
+          </motion.div>
+
+          {/* Cross-link to Shopify */}
+          <motion.div variants={fadeInVariants} className="tc mt5 pt4 bt b--black-10">
+            <p className="f5 f4-ns lh-copy">
+              Looking for Shopify help?{" "}
+              <a href="/shopify" className="link underline color fw6">
+                Check out custom Shopify storefronts →
               </a>
             </p>
           </motion.div>
