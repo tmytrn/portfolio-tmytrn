@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta name="facebook-domain-verification" content="xhwyidduixve8y0c7y5h6svu81rjze" />
         <noscript>
           <img
             height="1"
