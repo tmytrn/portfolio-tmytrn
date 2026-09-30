@@ -11,20 +11,22 @@ const fadeInVariants = {
   animate: { opacity: 1, y: 0, transition },
 };
 
-export default function Shopify() {
+export default function ShopifySales() {
   const handleCalendlyClick = () => {
-    trackCalendlyClick('shopify');
+    trackCalendlyClick('shopify-sales');
   };
 
   return (
     <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
       <Layout>
         <Head>
-          <title>Custom Shopify Storefronts — Tommy Tran</title>
+          <title>More Sales from Your Shopify Store — Tommy Tran</title>
           <meta
             name="description"
-            content="Custom Shopify storefronts for brands that care how they look and sell. Design and development for DTC and creative brands."
+            content="Audits, redesigns, and custom builds that turn browsers into buyers. Shopify development focused on conversions."
           />
+          <meta name="robots" content="noindex" />
+          <link rel="canonical" href="https://tmytrn.com/shopify" />
         </Head>
 
         <style jsx global>
@@ -39,12 +41,10 @@ export default function Shopify() {
           {/* Hero Section */}
           <motion.div variants={fadeInVariants} className="mb5 mb6-ns">
             <h1 className="f-hero fw6 lh-solid mb4">
-              Custom Shopify storefronts for brands that care how they look and
-              sell.
+              More sales from the traffic you already have.
             </h1>
             <p className="f3 f2-ns lh-copy mb4 mb5-ns measure-wide">
-              Design and development for DTC and creative brands—from theme
-              builds to fully custom storefronts.
+              Audits, redesigns, and custom builds that turn browsers into buyers.
             </p>
             <a
               href="https://calendly.com/tommy-tmytrn/30min"
@@ -65,19 +65,19 @@ export default function Shopify() {
               <h2 className="f4 f3-ns fw6 ttu ls1 mb4">Who it's for</h2>
               <ul className="list pl0 f5 f4-ns lh-copy">
                 <li className="mb3">
-                  Brands launching or rebuilding on Shopify
+                  Stores getting traffic but not enough conversions
                 </li>
                 <li className="mb3">
-                  Teams stuck on a template that can't match the brand
+                  Brands stuck with a theme that doesn't drive sales
                 </li>
                 <li className="mb3">
-                  Founders who want one person who can own design + build
+                  Founders who want performance audits and conversion optimization
                 </li>
                 <li className="mb3">
-                  Stores needing performance audits or conversion optimization
+                  Teams needing faster checkout flows and product pages
                 </li>
                 <li className="mb3">
-                  Brands wanting to improve email flows and SEO visibility
+                  Stores looking to improve email flows and search visibility
                 </li>
               </ul>
             </motion.div>
@@ -88,19 +88,19 @@ export default function Shopify() {
               className="w-100 w-50-l pl0 pl4-l">
               <h2 className="f4 f3-ns fw6 ttu ls1 mb4">What you get</h2>
               <ul className="list pl0 f5 f4-ns lh-copy">
-                <li className="mb3">Ecom strategy to increase conversions</li>
+                <li className="mb3">Conversion audits to identify what's blocking sales</li>
                 <li className="mb3">
-                  Optimized product flows (PDP, collection, cart)
+                  Optimized product pages, collections, cart, and checkout
                 </li>
                 <li className="mb3">
-                  Best SEO practices for web and agentic search
+                  Site speed improvements and mobile optimization
                 </li>
                 <li className="mb3">
-                  Mailchimp or Klaviyo email flow setup
+                  Mailchimp or Klaviyo email flows to recover abandoned carts
                 </li>
-                <li className="mb3">Custom Shopify storefront, theme, or build</li>
+                <li className="mb3">SEO best practices for web and AI search</li>
                 <li className="mb3">
-                  Responsive build, performance pass, launch support
+                  Custom Shopify builds designed for conversions
                 </li>
               </ul>
             </motion.div>
@@ -188,13 +188,13 @@ export default function Shopify() {
                   <span className="fw6">1.</span> Scoping call (20–30 min)
                 </li>
                 <li className="mb3">
-                  <span className="fw6">2.</span> Proposal covering design, build, audits, and strategy
+                  <span className="fw6">2.</span> Proposal covering conversion audits, design, and implementation
                 </li>
                 <li className="mb3">
-                  <span className="fw6">3.</span> Implementation: theme builds, email flows, SEO/AI search optimization
+                  <span className="fw6">3.</span> Execution: performance improvements, email flows, SEO optimization
                 </li>
                 <li className="mb3">
-                  <span className="fw6">4.</span> Performance review and launch support
+                  <span className="fw6">4.</span> Review, testing, and launch support
                 </li>
               </ol>
             </motion.div>
@@ -219,15 +219,15 @@ export default function Shopify() {
           {/* Inquiry Form */}
           <motion.div variants={fadeInVariants} className="mb5 mb6-ns pb4 bb b--black-10">
             <h2 className="f3 f2-ns fw6 lh-title mb4 tc">
-              Get a custom quote or audit
+              Get a conversion audit or custom quote
             </h2>
-            <InquiryForm variant="shopify" />
+            <InquiryForm variant="shopify-sales" />
           </motion.div>
 
           {/* Final CTA */}
           <motion.div variants={fadeInVariants} className="tc mt5 mt6-ns">
             <h2 className="f3 f2-ns fw6 lh-title mb4">
-              Ready to build something that matches your brand?
+              Ready to increase your store's conversion rate?
             </h2>
             <a
               href="https://calendly.com/tommy-tmytrn/30min"
