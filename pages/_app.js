@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }) {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '2188177098773829');
+          fbq('init', '2053177828662213');
           fbq('track', 'PageView');
         `}
       </Script>
