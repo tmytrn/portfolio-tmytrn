@@ -22,17 +22,6 @@ export default function AboutSection() {
               alt="Tommy Tran portrait"
               className="portrait-image"
             />
-            <div className="portrait-credit">
-              <p className="f6 f5-l mv1">Griffith Park, 2019</p>
-              <p className="f6 f5-l mv1">
-                Photo by{" "}
-                <a
-                  href="https://twitter.com/bensiordia"
-                  className="underline color">
-                  Benjamin Siordia
-                </a>
-              </p>
-            </div>
           </div>
         </div>
 
@@ -45,8 +34,8 @@ export default function AboutSection() {
           </p>
           <p className="f5 f4-ns lh-copy fade">
             He's worked with Public Announcement, Applied Poetics, Benjamin Edgar,
-            Reese Cooper, Urban Jürgensen, RC Outdoor Supply, Jina Valentine,
-            Reginald Sylvester II, Cam Hicks, and Augmented Reality Co.
+            Reese Cooper, Urban Jürgensen, RC Outdoor Supply, Reginald Sylvester II,
+            and Cam Hicks.
           </p>
         </div>
       </div>
@@ -60,9 +49,6 @@ export default function AboutSection() {
             width: 100%;
             height: auto;
             display: block;
-          }
-          .portrait-credit {
-            margin-top: 0.5rem;
           }
           .ls1 {
             letter-spacing: 0.05em;
