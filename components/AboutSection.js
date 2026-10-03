@@ -44,8 +44,8 @@ export default function AboutSection() {
             endeavours.
           </p>
           <p className="f5 f4-ns lh-copy fade">
-            I've worked with Public Announcement, Applied Poetics, Benjamin Edgar, 
-            Reese Cooper, Urban Jürgensen, RC Outdoor Supply, Jina Valentine, 
+            He's worked with Public Announcement, Applied Poetics, Benjamin Edgar,
+            Reese Cooper, Urban Jürgensen, RC Outdoor Supply, Jina Valentine,
             Reginald Sylvester II, Cam Hicks, and Augmented Reality Co.
           </p>
         </div>
