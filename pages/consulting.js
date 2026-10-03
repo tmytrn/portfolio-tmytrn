@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import { motion } from "framer-motion";
+import AboutSection from "../components/AboutSection";
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -216,6 +217,9 @@ export default function Consulting() {
               </div>
             </div>
           </motion.div>
+
+          {/* About Section */}
+          <AboutSection />
 
           <div className="flex flex-column flex-row-l mb5 mb6-ns pb4 bb b--black-10">
             {/* How it works */}
