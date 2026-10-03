@@ -12,8 +12,8 @@ const fadeInVariants = {
 };
 
 export default function ShopifyLandingPageTemplate({ content, variant = 'shopify' }) {
-  const handleCalendlyClick = () => {
-    trackCalendlyClick(variant);
+  const handleCalendlyClick = (buttonPosition) => {
+    trackCalendlyClick(variant, buttonPosition);
   };
 
   const handleContactClick = () => {
@@ -56,7 +56,7 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
               href="https://calendly.com/tommy-tmytrn/30min"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={handleCalendlyClick}
+              onClick={() => handleCalendlyClick('hero')}
               className="f5 f4-ns fw6 link color no-underline pv3 ph4 dib cta-button">
               Book a scoping call →
             </a>
@@ -204,7 +204,7 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
               href="https://calendly.com/tommy-tmytrn/30min"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={handleCalendlyClick}
+              onClick={() => handleCalendlyClick('footer')}
               className="f5 f4-ns fw6 link color no-underline pv3 ph4 dib mb3 cta-button">
               Book a 20-minute scoping call →
             </a>

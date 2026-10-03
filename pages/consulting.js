@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import { motion } from "framer-motion";
 import AboutSection from "../components/AboutSection";
+import { trackCalendlyClick } from "../utils/trackCalendlyClick";
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -11,6 +12,18 @@ const fadeInVariants = {
 };
 
 export default function Consulting() {
+  const handleCalendlyClick = (buttonPosition) => {
+    trackCalendlyClick('consulting', buttonPosition);
+  };
+
+  const handleContactClick = () => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Contact', {
+        content_name: 'consulting',
+        content_category: 'email_link',
+      });
+    }
+  };
   return (
     <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
       <Layout>
@@ -44,6 +57,7 @@ export default function Consulting() {
               href="https://calendly.com/tommy-tmytrn/30min"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => handleCalendlyClick('hero')}
               className="f5 f4-ns fw6 link color no-underline pv3 ph4 dib cta-button">
               Book a scoping call →
             </a>
@@ -270,12 +284,16 @@ export default function Consulting() {
               href="https://calendly.com/tommy-tmytrn/30min"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => handleCalendlyClick('footer')}
               className="f5 f4-ns fw6 link color no-underline pv3 ph4 dib mb3 cta-button">
               Book a scoping call →
             </a>
             <p className="f6 f5-ns mt3">
               Or email{" "}
-              <a href="mailto:tommy@tmytrn.com" className="link underline color">
+              <a
+                href="mailto:tommy@tmytrn.com"
+                onClick={handleContactClick}
+                className="link underline color">
                 tommy@tmytrn.com
               </a>
             </p>
