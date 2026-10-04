@@ -14,6 +14,13 @@ const fadeInVariants = {
 export default function Consulting() {
   const handleCalendlyClick = (buttonPosition) => {
     trackCalendlyClick('consulting', buttonPosition);
+    
+    // Fire Lead event for consulting page
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Lead', {
+        content_name: `consulting_${buttonPosition}`,
+      });
+    }
   };
 
   const handleContactClick = () => {
@@ -21,6 +28,11 @@ export default function Consulting() {
       window.fbq('track', 'Contact', {
         content_name: 'consulting',
         content_category: 'email_link',
+      });
+      
+      // Fire Lead event for email contact
+      window.fbq('track', 'Lead', {
+        content_name: 'consulting_email',
       });
     }
   };
