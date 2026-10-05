@@ -89,14 +89,14 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
             </motion.div>
           </div>
 
-          {/* Proof */}
+          {/* Selected work */}
           <motion.div
             variants={fadeInVariants}
             className="mb5 mb6-ns pb4 bb b--black-10">
-            <h2 className="f4 f3-ns fw6 ttu ls1 mb4 mb5-ns">Proof</h2>
-            <div className="flex flex-column flex-row-l justify-between">
+            <h2 className="f4 f3-ns fw6 ttu ls1 mb4 mb5-ns">Selected work</h2>
+            <div className="flex flex-column flex-row-l flex-wrap justify-between">
               {/* Reese Cooper */}
-              <div className="w-100 w-30-l mb4 mb5-l">
+              <div className="w-100 w-23-l mb4 mb5-l">
                 <a
                   href="https://reese-cooper.com"
                   target="_blank"
@@ -117,7 +117,7 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
               </div>
 
               {/* Benjamin Edgar */}
-              <div className="w-100 w-30-l mb4 mb5-l">
+              <div className="w-100 w-23-l mb4 mb5-l">
                 <a
                   href="https://benjaminedgar.com"
                   target="_blank"
@@ -138,7 +138,7 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
               </div>
 
               {/* RC Outdoor Supply */}
-              <div className="w-100 w-30-l mb4 mb5-l">
+              <div className="w-100 w-23-l mb4 mb5-l">
                 <a
                   href="https://rcoutdoorsupply.com"
                   target="_blank"
@@ -155,6 +155,27 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
                 <h3 className="f5 f4-ns fw6 mt3 mb2">RC Outdoor Supply</h3>
                 <p className="f6 f5-ns lh-copy fade ma0">
                   Editorial layouts and seamless product presentation
+                </p>
+              </div>
+
+              {/* Dresen Studio */}
+              <div className="w-100 w-23-l mb4 mb5-l">
+                <a
+                  href="https://www.dresen-studio.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="db link">
+                  <div className="browser-window dresen-vibe">
+                    <img
+                      src="/images/proof-screenshots/dresen-studio.jpg"
+                      alt="Dresen Studio homepage"
+                      className="browser-screenshot"
+                    />
+                  </div>
+                </a>
+                <h3 className="f5 f4-ns fw6 mt3 mb2">Dresen Studio</h3>
+                <p className="f6 f5-ns lh-copy fade ma0">
+                  Fashion and apparel studio brand site
                 </p>
               </div>
             </div>
@@ -274,10 +295,21 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
             .browser-window.rc-vibe {
               background: linear-gradient(135deg, #2c5f2d 0%, #97bc62 100%);
             }
+            .browser-window.dresen-vibe {
+              background: linear-gradient(135deg, #1a1a1a 0%, #3d3d3d 100%);
+            }
             .browser-screenshot {
               width: 100%;
               height: auto;
               display: block;
+            }
+            .w-23-l {
+              width: 23%;
+            }
+            @media screen and (max-width: 60em) {
+              .w-23-l {
+                width: 100%;
+              }
             }
           `}
         </style>

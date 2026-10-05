@@ -126,11 +126,11 @@ export default function Consulting() {
             </motion.div>
           </div>
 
-          {/* Proof */}
+          {/* Selected work */}
           <motion.div
             variants={fadeInVariants}
             className="mb5 mb6-ns pb4 bb b--black-10">
-            <h2 className="f4 f3-ns fw6 ttu ls1 mb4 mb5-ns">Proof</h2>
+            <h2 className="f4 f3-ns fw6 ttu ls1 mb4 mb5-ns">Selected work</h2>
             
             {/* First row - 3 items */}
             <div className="flex flex-column flex-row-l justify-between mb4 mb5-l">
