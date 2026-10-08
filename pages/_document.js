@@ -5,6 +5,13 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="facebook-domain-verification" content="0s5hf5gvj03gniu1ib20eit5ud9ynr" />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/fonts/eurostile/EurostileExtd-Black.woff2"
+          crossOrigin="anonymous"
+        />
         <noscript>
           <img
             height="1"
