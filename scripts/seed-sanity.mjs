@@ -2,7 +2,6 @@ import {createClient} from '@sanity/client'
 import {readFileSync} from 'fs'
 import {resolve, dirname} from 'path'
 import {fileURLToPath} from 'url'
-import 'dotenv/config'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 

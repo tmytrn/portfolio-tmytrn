@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@sanity/image-url": "^2.1.1",
-    "@sanity/vision": "^6.18.0",
     "@vercel/analytics": "^2.0.1",
     "date-fns": "^2.14.0",
     "framer-motion": "^2.9.5",
@@ -25,7 +24,6 @@
     "styled-components": "^6.5.3"
   },
   "devDependencies": {
-    "dotenv": "^18.0.6",
     "sass": "^1.26.10",
     "tachyons-hovers": "^2.5.2"
   }

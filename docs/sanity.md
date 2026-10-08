@@ -55,7 +55,7 @@ SANITY_API_WRITE_TOKEN=your-write-token
 Run the seed script to upload the current 4 projects to Sanity:
 
 ```bash
-node scripts/seed-sanity.mjs
+node --env-file=.env.local scripts/seed-sanity.mjs
 ```
 
 This will:
