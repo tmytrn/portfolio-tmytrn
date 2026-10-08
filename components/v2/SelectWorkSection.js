@@ -1,46 +1,26 @@
 // Project card component
+import { urlFor } from '../../lib/sanity';
 
-const projects = [
-  {
-    id: 'dresen',
-    title: 'Dresen Studio',
-    description: 'Womens denim brand from Becca Rosen. Made in USA.',
-    image: '/images/v2/dresen-card.jpg',
-    mobileImage: '/images/v2/dresen-card-mobile.jpg',
-    url: 'https://www.dresen-studio.com/',
-    width: 1250,
-    height: 938,
-  },
-  {
-    id: 'benjamin-edgar',
-    title: 'Benjamin Edgar',
-    description: 'Designer and Artist based in Chicago',
-    image: '/images/v2/benjamin-edgar-card.jpg',
-    url: 'https://benjaminedgar.com',
-    width: 1250,
-    height: 938,
-  },
-  {
-    id: 'urban-jurgensen',
-    title: 'Urban Jürgensen',
-    description: '250 year old Danish watchmaker',
-    image: '/images/v2/urban-jurgensen-card.jpg',
-    url: 'https://urbanjurgensen.com/',
-    width: 1250,
-    height: 938,
-  },
-  {
-    id: 'scroll-nyc',
-    title: 'Scroll NYC',
-    description: 'Art Gallery based in Chinatown NY',
-    image: '/images/v2/scroll-nyc-card.jpg',
-    url: null,
-    width: 1250,
-    height: 938,
-  },
-];
+export default function SelectWorkSection({ projects }) {
+  const getImageUrl = (project) => {
+    // If it's a Sanity image object with asset reference
+    if (project.image?.asset) {
+      return urlFor(project.image)
+        .width(1250)
+        .height(938)
+        .fit('crop')
+        .crop('focalpoint')
+        .auto('format')
+        .url();
+    }
+    // Otherwise it's a fallback static image path
+    return project.image;
+  };
 
-export default function SelectWorkSection() {
+  const getImageAlt = (project) => {
+    return project.image?.alt || project.title;
+  };
+
   return (
     <div className="select-work-container">
       <div className="select-work-content">
@@ -48,13 +28,13 @@ export default function SelectWorkSection() {
         
         <div className="projects-grid">
           {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              {project.url ? (
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
+            <div key={project._id} className="project-card">
+              {project.link ? (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
                   <div className="project-image-wrapper">
                     <img
-                      src={project.image}
-                      alt={project.title}
+                      src={getImageUrl(project)}
+                      alt={getImageAlt(project)}
                       className="project-image"
                       loading="lazy"
                     />
@@ -63,8 +43,8 @@ export default function SelectWorkSection() {
               ) : (
                 <div className="project-image-wrapper">
                   <img
-                    src={project.image}
-                    alt={project.title}
+                    src={getImageUrl(project)}
+                    alt={getImageAlt(project)}
                     className="project-image"
                     loading="lazy"
                   />
@@ -72,7 +52,12 @@ export default function SelectWorkSection() {
               )}
               
               <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
+              {project.description && (
+                <p className="project-description">{project.description}</p>
+              )}
+              {project.tools && project.tools.length > 0 && (
+                <p className="project-tools">{project.tools.join(' · ')}</p>
+              )}
             </div>
           ))}
         </div>
@@ -150,6 +135,15 @@ export default function SelectWorkSection() {
           max-width: 484px;
         }
 
+        .project-tools {
+          font-size: 14px;
+          line-height: 1.5;
+          margin: 6px 0 0 0;
+          max-width: 484px;
+          color: var(--navy);
+          opacity: 0.7;
+        }
+
         @media (max-width: 1440px) {
           .select-work-content {
             padding: 0 40px;
@@ -196,6 +190,10 @@ export default function SelectWorkSection() {
           }
 
           .project-description {
+            display: none;
+          }
+
+          .project-tools {
             display: none;
           }
         }

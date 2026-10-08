@@ -194,32 +194,57 @@ export default function ContactSection() {
               <div className="budget-range-wrapper">
                 <label className="budget-label">Budget Range</label>
                 
-                <div className="slider-wrapper">
-                  <input
-                    type="range"
-                    name="budgetMin"
-                    min="5000"
-                    max="50000"
-                    step="5000"
-                    value={formData.budgetMin}
-                    onChange={(e) => handleBudgetChange(e, 'min')}
-                    className="range-slider range-slider-min"
-                  />
-                  <input
-                    type="range"
-                    name="budgetMax"
-                    min="5000"
-                    max="50000"
-                    step="5000"
-                    value={formData.budgetMax}
-                    onChange={(e) => handleBudgetChange(e, 'max')}
-                    className="range-slider range-slider-max"
-                  />
-                </div>
+                <div className="slider-container">
+                  <div className="slider-track-bg"></div>
+                  <div 
+                    className="slider-track-active"
+                    style={{
+                      left: `${((formData.budgetMin - 5000) / 45000) * 100}%`,
+                      width: `${((formData.budgetMax - formData.budgetMin) / 45000) * 100}%`
+                    }}
+                  ></div>
+                  
+                  <div className="slider-wrapper">
+                    <input
+                      type="range"
+                      name="budgetMin"
+                      min="5000"
+                      max="50000"
+                      step="5000"
+                      value={formData.budgetMin}
+                      onChange={(e) => handleBudgetChange(e, 'min')}
+                      className="range-slider range-slider-min"
+                    />
+                    <input
+                      type="range"
+                      name="budgetMax"
+                      min="5000"
+                      max="50000"
+                      step="5000"
+                      value={formData.budgetMax}
+                      onChange={(e) => handleBudgetChange(e, 'max')}
+                      className="range-slider range-slider-max"
+                    />
+                  </div>
 
-                <div className="slider-labels">
-                  <span className="slider-label">{formatBudget(formData.budgetMin)}</span>
-                  <span className="slider-label">{formatBudget(formData.budgetMax)}</span>
+                  <div className="slider-labels">
+                    <span 
+                      className="slider-label slider-label-min"
+                      style={{
+                        left: `${((formData.budgetMin - 5000) / 45000) * 100}%`
+                      }}
+                    >
+                      {formatBudget(formData.budgetMin)}
+                    </span>
+                    <span 
+                      className="slider-label slider-label-max"
+                      style={{
+                        left: `${((formData.budgetMax - 5000) / 45000) * 100}%`
+                      }}
+                    >
+                      {formatBudget(formData.budgetMax)}
+                    </span>
+                  </div>
                 </div>
               </div>
 
@@ -306,6 +331,8 @@ export default function ContactSection() {
         .contact-link {
           color: inherit;
           text-decoration: underline;
+          font-family: inherit;
+          font-size: inherit;
         }
 
         .contact-link:hover {
@@ -360,10 +387,31 @@ export default function ContactSection() {
           margin-bottom: 30px;
         }
 
+        .slider-container {
+          position: relative;
+          height: 50px;
+        }
+
+        .slider-track-bg {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background: var(--navy);
+        }
+
+        .slider-track-active {
+          position: absolute;
+          top: 10px;
+          height: 1px;
+          background: var(--navy);
+          opacity: 0.3;
+        }
+
         .slider-wrapper {
           position: relative;
           height: 20px;
-          margin-bottom: 15px;
         }
 
         .range-slider {
@@ -381,14 +429,14 @@ export default function ContactSection() {
         .range-slider::-webkit-slider-track {
           width: 100%;
           height: 1px;
-          background: var(--navy);
+          background: transparent;
           border: none;
         }
 
         .range-slider::-moz-range-track {
           width: 100%;
           height: 1px;
-          background: var(--navy);
+          background: transparent;
           border: none;
         }
 
@@ -419,13 +467,17 @@ export default function ContactSection() {
         }
 
         .slider-labels {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 10px;
+          position: relative;
+          width: 100%;
+          height: 30px;
+          margin-top: 5px;
         }
 
         .slider-label {
+          position: absolute;
           font-size: 18px;
+          transform: translateX(-50%);
+          white-space: nowrap;
         }
 
         .form-textarea {

@@ -5,6 +5,8 @@ import SelectWorkSection from '../components/v2/SelectWorkSection';
 import AboutSectionV2 from '../components/v2/AboutSectionV2';
 import ContactSection from '../components/v2/ContactSection';
 import Footer from '../components/v2/Footer';
+import { getProjects } from '../lib/sanity';
+import { fallbackProjects } from '../lib/fallbackProjects';
 
 const ebGaramond = EB_Garamond({
   weight: ['400'],
@@ -12,7 +14,7 @@ const ebGaramond = EB_Garamond({
   display: 'swap',
 });
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <div className={ebGaramond.className} style={{ backgroundColor: '#F3EDE1', color: '#152057', minHeight: '100vh' }}>
       <Head>
@@ -26,7 +28,7 @@ export default function Home() {
 
       <main>
         <HeroSection />
-        <SelectWorkSection />
+        <SelectWorkSection projects={projects} />
         <AboutSectionV2 />
         <ContactSection />
         <Footer />
@@ -78,7 +80,7 @@ export default function Home() {
           box-sizing: border-box;
         }
         
-        body {
+        html, body {
           margin: 0;
           padding: 0;
         }
@@ -92,4 +94,16 @@ export default function Home() {
       `}</style>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const sanityProjects = await getProjects();
+  const projects = sanityProjects || fallbackProjects;
+
+  return {
+    props: {
+      projects,
+    },
+    revalidate: 60, // ISR: revalidate every 60 seconds
+  };
 }
