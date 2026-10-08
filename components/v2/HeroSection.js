@@ -15,7 +15,7 @@ export default function HeroSection() {
   }, []);
 
   const WordmarkSVG = ({ mobile }) => (
-    <div style={{ width: '100%', textAlign: 'center', marginTop: mobile ? '24px' : '38px' }}>
+    <div style={{ width: '100%', textAlign: 'center' }}>
       <Image
         src={mobile ? '/images/v2/tmytrn-llc-wordmark-mobile.svg' : '/images/v2/tmytrn-llc-wordmark.svg'}
         alt="TMYTRN LLC"
@@ -63,7 +63,7 @@ export default function HeroSection() {
       <style jsx>{`
         .hero-container {
           width: 100%;
-          padding: 0 15px;
+          padding: 38px 15px 0;
         }
 
         .hero-content {
@@ -169,7 +169,7 @@ export default function HeroSection() {
 
         @media (max-width: 768px) {
           .hero-container {
-            padding: 0 15px;
+            padding: 24px 15px 0;
           }
 
           .hero-content {

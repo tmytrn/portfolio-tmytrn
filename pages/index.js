@@ -83,6 +83,7 @@ export default function Home({ projects }) {
         html, body {
           margin: 0;
           padding: 0;
+          background-color: #F3EDE1;
         }
 
         :root {
