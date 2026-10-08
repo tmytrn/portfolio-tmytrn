@@ -1,12 +1,12 @@
-import Image from 'next/image';
+// Project card component
 
 const projects = [
   {
     id: 'dresen',
     title: 'Dresen Studio',
     description: 'Womens denim brand from Becca Rosen. Made in USA.',
-    image: '/images/v2/dresen-card.png',
-    mobileImage: '/images/v2/dresen-card-mobile.png',
+    image: '/images/v2/dresen-card.jpg',
+    mobileImage: '/images/v2/dresen-card-mobile.jpg',
     url: 'https://www.dresen-studio.com/',
     width: 1250,
     height: 938,
@@ -15,7 +15,7 @@ const projects = [
     id: 'benjamin-edgar',
     title: 'Benjamin Edgar',
     description: 'Designer and Artist based in Chicago',
-    image: '/images/v2/benjamin-edgar-card.png',
+    image: '/images/v2/benjamin-edgar-card.jpg',
     url: 'https://benjaminedgar.com',
     width: 1250,
     height: 938,
@@ -24,7 +24,7 @@ const projects = [
     id: 'urban-jurgensen',
     title: 'Urban Jürgensen',
     description: '250 year old Danish watchmaker',
-    image: '/images/v2/urban-jurgensen-card.png',
+    image: '/images/v2/urban-jurgensen-card.jpg',
     url: 'https://urbanjurgensen.com/',
     width: 1250,
     height: 938,
@@ -33,7 +33,7 @@ const projects = [
     id: 'scroll-nyc',
     title: 'Scroll NYC',
     description: 'Art Gallery based in Chinatown NY',
-    image: '/images/v2/scroll-nyc-card.png',
+    image: '/images/v2/scroll-nyc-card.jpg',
     url: null,
     width: 1250,
     height: 938,
@@ -52,11 +52,9 @@ export default function SelectWorkSection() {
               {project.url ? (
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
                   <div className="project-image-wrapper">
-                    <Image
+                    <img
                       src={project.image}
                       alt={project.title}
-                      width={project.width}
-                      height={project.height}
                       className="project-image"
                       loading="lazy"
                     />
@@ -64,11 +62,9 @@ export default function SelectWorkSection() {
                 </a>
               ) : (
                 <div className="project-image-wrapper">
-                  <Image
+                  <img
                     src={project.image}
                     alt={project.title}
-                    width={project.width}
-                    height={project.height}
                     className="project-image"
                     loading="lazy"
                   />
@@ -112,6 +108,7 @@ export default function SelectWorkSection() {
 
         .project-card {
           width: 100%;
+          min-width: 0;
         }
 
         .project-link {

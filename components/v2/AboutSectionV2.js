@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// About section component
 
 export default function AboutSectionV2() {
   return (
@@ -8,11 +8,9 @@ export default function AboutSectionV2() {
         
         <div className="about-row">
           <div className="about-image-col">
-            <Image
+            <img
               src="/images/v2/about-photo.jpg"
               alt="Tommy Tran"
-              width={690}
-              height={920}
               className="about-image"
               loading="lazy"
             />
@@ -62,18 +60,20 @@ export default function AboutSectionV2() {
 
         .about-image-col {
           width: 100%;
+          max-width: 625px;
         }
 
         .about-image {
           width: 100%;
           height: auto;
           display: block;
+          object-fit: cover;
         }
 
         .about-text-col {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
         }
 
         .about-text {

@@ -37,7 +37,7 @@ export default function HeroSection() {
         </p>
 
         <div className="hero-row">
-          <div className="hero-box">
+          <div className="hero-column">
             <div className="gradient-box">
               <div className="yellow-halo">
                 <div className="yellow-core" />
@@ -86,16 +86,16 @@ export default function HeroSection() {
           grid-template-columns: 1fr 1fr;
           gap: 57px;
           margin-top: 115px;
+          align-items: start;
         }
 
-        .hero-box {
+        .hero-column {
           width: 100%;
-          aspect-ratio: 625 / 429;
         }
 
         .gradient-box {
           width: 100%;
-          height: 100%;
+          aspect-ratio: 625 / 429;
           background: linear-gradient(180deg, #16388E 0%, #081848 100%);
           display: flex;
           align-items: center;
@@ -119,9 +119,9 @@ export default function HeroSection() {
         }
 
         .services-column {
+          width: 100%;
           display: flex;
           flex-direction: column;
-          align-items: center;
         }
 
         .services-label {
@@ -132,6 +132,7 @@ export default function HeroSection() {
 
         .services-box {
           width: 100%;
+          flex: 1;
           aspect-ratio: 625 / 429;
           border: 1px solid var(--navy);
           display: flex;
