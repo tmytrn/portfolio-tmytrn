@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="facebook-domain-verification" content="0s5hf5gvj03gniu1ib20eit5ud9ynr" />
+        <link rel="describedby" href="https://tmytrn.com/llms.txt" />
         <link
           rel="preload"
           as="font"

@@ -1,23 +1,67 @@
-import Image from 'next/image';
+import {useState} from "react";
+import Image from "next/image";
+import {urlFor} from "../../lib/sanity";
 
-export default function Footer() {
+const FALLBACK_STATIC = "/images/v2/computer-drawing-transparent@4x.png";
+const FALLBACK_ALT = "Computer illustration";
+
+export default function Footer({footerLeft}) {
+  const [hovered, setHovered] = useState(false);
+
+  const alt = footerLeft?.alt || FALLBACK_ALT;
+  const staticUrl = footerLeft?.staticImage?.asset
+    ? urlFor(footerLeft.staticImage)?.width(216).url()
+    : null;
+  const gifUrl = footerLeft?.gif?.asset?.url || null;
+  const restingSrc = staticUrl || FALLBACK_STATIC;
+  const showGif = hovered && Boolean(gifUrl);
+
   return (
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-row">
-          <div className="footer-left">
-            <Image
-              src="/images/v2/computer-drawing-transparent@4x.png"
-              alt="Computer illustration"
-              width={108}
-              height={90}
-              className="computer-drawing"
-            />
+          <div
+            className="footer-left"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            {showGif ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={gifUrl}
+                alt={alt}
+                className="computer-drawing computer-drawing-gif"
+              />
+            ) : staticUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={restingSrc}
+                alt={alt}
+                className="computer-drawing"
+              />
+            ) : (
+              <Image
+                src={FALLBACK_STATIC}
+                alt={alt}
+                width={108}
+                height={90}
+                className="computer-drawing"
+              />
+            )}
+            {gifUrl ? (
+              // Preload GIF so hover playback starts immediately
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={gifUrl} alt="" aria-hidden="true" className="gif-preload" />
+            ) : null}
           </div>
 
           <div className="footer-right">
             <h2 className="footer-headline">
-              I LOVE THE<br />COMPUTER
+              <img
+                src="/images/v2/i-love-the-computer.svg"
+                alt="I love the computer"
+                className="footer-wordmark"
+              />
             </h2>
           </div>
         </div>
@@ -36,6 +80,7 @@ export default function Footer() {
         }
 
         .footer-content {
+          width: 100%;
           max-width: 1440px;
           margin: 0 auto;
           padding: 0 56px;
@@ -51,12 +96,23 @@ export default function Footer() {
 
         .footer-left {
           flex-shrink: 0;
+          cursor: default;
         }
 
-        .computer-drawing {
+        .footer-left :global(.computer-drawing) {
           image-rendering: pixelated;
           width: clamp(54px, 7.5vw, 108px);
           height: auto;
+          display: block;
+        }
+
+        .gif-preload {
+          position: absolute;
+          width: 0;
+          height: 0;
+          opacity: 0;
+          pointer-events: none;
+          overflow: hidden;
         }
 
         .footer-right {
@@ -65,13 +121,15 @@ export default function Footer() {
         }
 
         .footer-headline {
-          font-family: var(--font-display);
-          font-weight: 900;
-          font-size: clamp(32px, 8.889vw, 128px);
-          line-height: 0.7686;
           margin: 0;
-          text-transform: uppercase;
-          letter-spacing: -0.01em;
+        }
+
+        .footer-wordmark {
+          width: clamp(259px, 71.8vw, 1034px);
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin-left: auto;
         }
 
         .footer-copyright {
@@ -116,19 +174,15 @@ export default function Footer() {
             text-align: right;
           }
 
-          .footer-headline {
-            line-height: 1;
-            letter-spacing: -0.02em;
-          }
-
           .footer-copyright {
-            text-align: left;
+            text-align: right;
           }
 
           .footer-copyright p {
             font-size: 12px;
           }
         }
+
       `}</style>
     </footer>
   );

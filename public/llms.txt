@@ -1,0 +1,19 @@
+# TMYTRN LLC
+
+> Web consulting and development practice of Tommy Tran. Shopify storefronts, Next.js sites, ecommerce strategy, Klaviyo/Mailchimp email flows, SEO, and AI / agentic search optimization.
+
+Tommy Tran is a web designer and developer based in New York. TMYTRN LLC helps DTC and creative brands design, build, and optimize websites that convert. Contact: tommy@tmytrn.com · Site: https://tmytrn.com · Calendly: https://calendly.com/tommy-tmytrn/30min
+
+## Pages
+
+- [Home](https://tmytrn.com/): Overview of TMYTRN LLC, capabilities, selected work, and contact
+- [Home (Markdown)](https://tmytrn.com/index.md): Agent-readable summary of the practice, services, and clients
+- [Shopify](https://tmytrn.com/shopify): Custom Shopify storefronts for DTC and creative brands
+- [Shopify (Markdown)](https://tmytrn.com/shopify.md): Agent-readable Shopify services brief
+- [Consulting](https://tmytrn.com/consulting): Web consulting — design direction, builds, audits, ongoing help
+- [Consulting (Markdown)](https://tmytrn.com/consulting.md): Agent-readable consulting services brief
+
+## Optional
+
+- [Sitemap](https://tmytrn.com/sitemap.xml): Machine-readable list of indexable URLs
+- [Robots](https://tmytrn.com/robots.txt): Crawler policy (AI crawlers allowed; studio and ad landing variants excluded)

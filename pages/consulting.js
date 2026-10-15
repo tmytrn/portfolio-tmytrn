@@ -1,7 +1,7 @@
-import Head from "next/head";
 import Layout from "../components/layout";
 import { motion } from "framer-motion";
 import AboutSection from "../components/AboutSection";
+import SeoHead from "../components/SeoHead";
 import { trackCalendlyClick } from "../utils/trackCalendlyClick";
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
@@ -39,13 +39,13 @@ export default function Consulting() {
   return (
     <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
       <Layout>
-        <Head>
-          <title>Web Consulting — Tommy Tran</title>
-          <meta
-            name="description"
-            content="Web consulting for brands that need a sharp technical partner. Design direction, builds, audits, and ongoing help — without hiring a full team."
-          />
-        </Head>
+        <SeoHead
+          title="Web Consulting — Tommy Tran"
+          description="Web consulting for brands that need a sharp technical partner. Design direction, builds, audits, and ongoing help — without hiring a full team."
+          ogDescription="Design direction, builds, audits, and ongoing web help from Tommy Tran / TMYTRN LLC — without hiring a full team."
+          path="/consulting"
+          markdownPath="/consulting.md"
+        />
 
         <style jsx global>
           {`

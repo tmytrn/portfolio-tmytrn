@@ -4,8 +4,12 @@ export default async function handler(req, res) {
   }
 
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
-  const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL || 'tommy@tmytrn.com';
-  const CONTACT_FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || 'TMYTRN Contact <onboarding@resend.dev>';
+  const INBOX = 'tommy@tmytrn.com';
+  const configuredFrom = process.env.CONTACT_FROM_EMAIL;
+  const CONTACT_FROM_EMAIL =
+    configuredFrom && !configuredFrom.includes('resend.dev')
+      ? configuredFrom
+      : 'Tommy Tran <contact@sender-bot.tmytrn.com>';
 
   if (!RESEND_API_KEY) {
     console.error('RESEND_API_KEY is not configured');
@@ -30,7 +34,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Invalid submission' });
   }
 
-  if (!email || !email.includes('@')) {
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return res.status(400).json({ error: 'Valid email is required' });
   }
 
@@ -59,8 +63,17 @@ export default async function handler(req, res) {
     return `$${value / 1000}k`;
   };
 
+  const escapeHtml = (value) =>
+    String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+
   const budgetRange = `${formatBudget(budgetMin)} - ${formatBudget(budgetMax)}`;
   const subject = `New Contact from ${firstName} ${lastName} (${budgetRange})`;
+  const replyName = `${firstName} ${lastName}`.replace(/[<>"\r\n]/g, '').trim();
+  const replyTo = replyName ? `${replyName} <${email}>` : email;
 
   const textBody = `
 New contact form submission from tmytrn.com
@@ -82,22 +95,22 @@ ${details ? `Message:\n${details}` : 'No additional details provided.'}
     <table style="margin-bottom: 20px;">
       <tr>
         <td style="padding: 8px 12px 8px 0; font-weight: bold;">Name:</td>
-        <td style="padding: 8px 0;">${firstName} ${lastName}</td>
+        <td style="padding: 8px 0;">${escapeHtml(firstName)} ${escapeHtml(lastName)}</td>
       </tr>
       <tr>
         <td style="padding: 8px 12px 8px 0; font-weight: bold;">Email:</td>
-        <td style="padding: 8px 0;"><a href="mailto:${email}">${email}</a></td>
+        <td style="padding: 8px 0;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td>
       </tr>
       ${company ? `
       <tr>
         <td style="padding: 8px 12px 8px 0; font-weight: bold;">Company:</td>
-        <td style="padding: 8px 0;">${company}</td>
+        <td style="padding: 8px 0;">${escapeHtml(company)}</td>
       </tr>
       ` : ''}
       ${title ? `
       <tr>
         <td style="padding: 8px 12px 8px 0; font-weight: bold;">Title:</td>
-        <td style="padding: 8px 0;">${title}</td>
+        <td style="padding: 8px 0;">${escapeHtml(title)}</td>
       </tr>
       ` : ''}
       <tr>
@@ -109,7 +122,7 @@ ${details ? `Message:\n${details}` : 'No additional details provided.'}
     ${details ? `
     <div style="margin-top: 20px;">
       <p style="font-weight: bold; margin-bottom: 8px;">Message:</p>
-      <p style="white-space: pre-wrap;">${details}</p>
+      <p style="white-space: pre-wrap;">${escapeHtml(details)}</p>
     </div>
     ` : '<p style="color: #666;">No additional details provided.</p>'}
   </body>
@@ -125,8 +138,8 @@ ${details ? `Message:\n${details}` : 'No additional details provided.'}
       },
       body: JSON.stringify({
         from: CONTACT_FROM_EMAIL,
-        to: [CONTACT_TO_EMAIL],
-        reply_to: email,
+        to: [INBOX],
+        reply_to: replyTo,
         subject: subject,
         text: textBody,
         html: htmlBody,

@@ -13,6 +13,26 @@ const client = createClient({
   useCdn: false,
 })
 
+function descriptionBlocks(text) {
+  return [
+    {
+      _type: 'block',
+      _key: 'description',
+      style: 'normal',
+      markDefs: [],
+      children: [
+        {
+          _type: 'span',
+          _key: 'description-span',
+          text,
+          marks: [],
+        },
+      ],
+    },
+  ]
+}
+
+// Dates are set in Studio. Platform matches the live site for these four projects.
 const projects = [
   {
     _id: 'project-dresen-studio',
@@ -20,10 +40,12 @@ const projects = [
     title: 'Dresen Studio',
     description: 'Womens denim brand from Becca Rosen. Made in USA.',
     link: 'https://www.dresen-studio.com/',
-    order: 1,
+    platform: 'shopify',
     tools: [],
-    imagePath: resolve(__dirname, '../public/images/v2/dresen-card.jpg'),
-    imageAlt: 'Dresen Studio website screenshot',
+    // Composite cards seed as foreground until separate bg/fg assets are uploaded in Studio.
+    foregroundImagePath: resolve(__dirname, '../public/images/v2/dresen-card.jpg'),
+    foregroundImageAlt: 'Dresen Studio website screenshot',
+    backgroundImagePath: null,
   },
   {
     _id: 'project-benjamin-edgar',
@@ -31,10 +53,11 @@ const projects = [
     title: 'Benjamin Edgar',
     description: 'Designer and Artist based in Chicago',
     link: 'https://benjaminedgar.com',
-    order: 2,
+    platform: 'shopify',
     tools: [],
-    imagePath: resolve(__dirname, '../public/images/v2/benjamin-edgar-card.jpg'),
-    imageAlt: 'Benjamin Edgar portfolio screenshot',
+    foregroundImagePath: resolve(__dirname, '../public/images/v2/benjamin-edgar-card.jpg'),
+    foregroundImageAlt: 'Benjamin Edgar portfolio screenshot',
+    backgroundImagePath: null,
   },
   {
     _id: 'project-urban-jurgensen',
@@ -42,10 +65,11 @@ const projects = [
     title: 'Urban Jürgensen',
     description: '250 year old Danish watchmaker',
     link: 'https://urbanjurgensen.com/',
-    order: 3,
+    platform: 'nextjs',
     tools: [],
-    imagePath: resolve(__dirname, '../public/images/v2/urban-jurgensen-card.jpg'),
-    imageAlt: 'Urban Jürgensen website screenshot',
+    foregroundImagePath: resolve(__dirname, '../public/images/v2/urban-jurgensen-card.jpg'),
+    foregroundImageAlt: 'Urban Jürgensen website screenshot',
+    backgroundImagePath: null,
   },
   {
     _id: 'project-scroll-nyc',
@@ -53,10 +77,11 @@ const projects = [
     title: 'Scroll NYC',
     description: 'Art Gallery based in Chinatown NY',
     link: null,
-    order: 4,
+    platform: 'nextjs',
     tools: [],
-    imagePath: resolve(__dirname, '../public/images/v2/scroll-nyc-card.jpg'),
-    imageAlt: 'Scroll NYC website screenshot',
+    foregroundImagePath: resolve(__dirname, '../public/images/v2/scroll-nyc-card.jpg'),
+    foregroundImageAlt: 'Scroll NYC website screenshot',
+    backgroundImagePath: null,
   },
 ]
 
@@ -98,19 +123,25 @@ async function seedProjects() {
     try {
       console.log(`\nProcessing: ${project.title}`)
       
-      // Upload image
-      const imageField = await uploadImage(project.imagePath, project.imageAlt)
-      
+      const foregroundImage = await uploadImage(
+        project.foregroundImagePath,
+        project.foregroundImageAlt
+      )
+      const backgroundImage = project.backgroundImagePath
+        ? await uploadImage(project.backgroundImagePath, '')
+        : undefined
+
       // Create or replace project document
       const doc = {
         _id: project._id,
         _type: project._type,
         title: project.title,
-        description: project.description,
+        description: descriptionBlocks(project.description),
         link: project.link,
-        order: project.order,
+        platform: project.platform,
         tools: project.tools,
-        image: imageField,
+        foregroundImage,
+        ...(backgroundImage ? {backgroundImage} : {}),
       }
       
       const result = await client.createOrReplace(doc)

@@ -1,8 +1,8 @@
-import Head from "next/head";
 import Layout from "./layout";
 import { motion } from "framer-motion";
 import { trackCalendlyClick } from "../utils/trackCalendlyClick";
 import AboutSection from "./AboutSection";
+import SeoHead from "./SeoHead";
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -28,12 +28,17 @@ export default function ShopifyLandingPageTemplate({ content, variant = 'shopify
   return (
     <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
       <Layout>
-        <Head>
-          <title>{content.meta.title}</title>
-          <meta name="description" content={content.meta.description} />
-          {content.meta.noindex && <meta name="robots" content="noindex" />}
-          {content.meta.canonical && <link rel="canonical" href={content.meta.canonical} />}
-        </Head>
+        <SeoHead
+          title={content.meta.title}
+          description={content.meta.description}
+          ogDescription={content.meta.description}
+          path={content.meta.path || "/shopify"}
+          canonical={content.meta.canonical || undefined}
+          noindex={Boolean(content.meta.noindex)}
+          markdownPath={
+            content.meta.noindex ? undefined : "/shopify.md"
+          }
+        />
 
         <style jsx global>
           {`

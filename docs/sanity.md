@@ -59,16 +59,19 @@ node --env-file=.env.local scripts/seed-sanity.mjs
 ```
 
 This will:
-- Upload the project card images from `public/images/v2/`
+- Upload the project card images from `public/images/v2/` as foreground images
 - Create project documents in Sanity with titles, descriptions, and links
 - Use deterministic IDs so you can run it multiple times safely (idempotent)
+
+After seeding, upload separate background and foreground assets in the Studio so the hover tilt only moves the screenshot.
 
 ### 6. Access the Studio
 
 Visit [http://localhost:3000/studio](http://localhost:3000/studio) (or https://tmytrn.com/studio in production) to:
 - Edit project titles, descriptions, and links
 - Add tools/technologies to each project
-- Reorder projects using the "Display Order" field
+- Assign each project to Shopify or Next.js
+- Set a date so the homepage can sort newest to oldest
 - Add new projects
 
 Changes made in the Studio will appear on the homepage within 60 seconds (ISR revalidation).
@@ -78,18 +81,18 @@ Changes made in the Studio will appear on the homepage within 60 seconds (ISR re
 ### Project Fields
 
 - **Title**: Project name (required)
-- **Image**: Project card image with hotspot/crop support (required)
-- **Alt Text**: Image alt text for accessibility (required)
+- **Background Image**: Static card layer (optional). Stays put on hover; hotspot/crop supported. Alt optional if decorative.
+- **Foreground Image**: Site screenshot / UI layer with hotspot/crop (required). Gets the perspective tilt on hover.
+- **Alt Text**: Foreground image alt text for accessibility (required)
 - **Tools & Technologies**: Tags like "Shopify", "Next.js", "Klaviyo" (optional)
 - **Project URL**: External link to the live site (optional)
-- **Description**: Short project description (optional)
-- **Display Order**: Number to control sort order (lower = higher on page)
+- **Description**: Rich text (optional). Highlight text and use the link button to add an inline link. Opening an older plain-text description converts it so it can be edited.
+- **Platform**: Shopify or Next.js (required). Controls which homepage view the project appears in.
+- **Date**: Project date (required). The homepage sorts newest to oldest.
 
 ### Sorting
 
-Projects are sorted by:
-1. Display Order (ascending)
-2. Creation date (ascending) for items with the same order
+Projects are sorted by date, newest first. Projects without a date appear after dated ones. The homepage can show all projects, or only Shopify or Next.js.
 
 ## Fallback Behavior
 
