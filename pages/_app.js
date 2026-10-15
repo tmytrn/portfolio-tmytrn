@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 function handleExitComplete() {
   if (typeof window !== 'undefined') {
-    window.scrollTo({ top: 0 })
+    window.scrollTo({ top: 0, behavior: "auto" })
   }
 }
 
