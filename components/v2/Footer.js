@@ -67,7 +67,7 @@ export default function Footer({ footerLeft }) {
         </div>
 
         <div className="footer-copyright">
-          <p>© 2026 TMYTRN LLC</p>
+          <p>© {new Date().getFullYear()} TMYTRN LLC</p>
         </div>
       </div>
 

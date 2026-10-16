@@ -76,172 +76,199 @@ function HaloCornerLines({ x, y, parentRef, haloRef, coreRef }) {
   const svgRef = useRef(null);
 
   useIsomorphicLayoutEffect(() => {
-    const parent = parentRef.current;
-    const halo = haloRef.current;
-    const core = coreRef.current;
-    const fill = fillRef.current;
-    const svg = svgRef.current;
-    if (!parent || !halo || !core || !fill || !svg) return undefined;
+    let stopX = null;
+    let stopY = null;
+    let observer = null;
+    let rafId = 0;
+    let cancelled = false;
 
-    const outerLines = svg.querySelectorAll(".line-outer");
-    const innerLines = svg.querySelectorAll(".line-inner");
-    const polygon = fill.querySelector(".halo-box");
-    const metrics = {
-      haloLeft: 0,
-      haloTop: 0,
-      haloWidth: 0,
-      haloHeight: 0,
-      coreLeft: 0,
-      coreTop: 0,
-      coreWidth: 0,
-      coreHeight: 0,
-      parentWidth: 0,
-      parentHeight: 0,
+    const tearDown = () => {
+      stopX?.();
+      stopY?.();
+      stopX = null;
+      stopY = null;
+      observer?.disconnect();
+      observer = null;
     };
-    const cornerT = [1, 1, 1, 1];
-    const parentX = [0, 0, 0, 0];
-    const parentY = [0, 0, 0, 0];
-    const coreX = [0, 0, 0, 0];
-    const coreY = [0, 0, 0, 0];
-    const boxX = [0, 0, 0, 0];
-    const boxY = [0, 0, 0, 0];
 
-    const draw = () => {
-      const dragX = x.get();
-      const dragY = y.get();
-      const coreLeft = metrics.coreLeft + dragX;
-      const coreTop = metrics.coreTop + dragY;
-      const coreRight = coreLeft + metrics.coreWidth;
-      const coreBottom = coreTop + metrics.coreHeight;
-      const parentWidth = metrics.parentWidth;
-      const parentHeight = metrics.parentHeight;
-      parentX[0] = 0;
-      parentX[1] = parentWidth;
-      parentX[2] = 0;
-      parentX[3] = parentWidth;
-      parentY[0] = 0;
-      parentY[1] = 0;
-      parentY[2] = parentHeight;
-      parentY[3] = parentHeight;
-      coreX[0] = coreLeft;
-      coreX[1] = coreRight;
-      coreX[2] = coreLeft;
-      coreX[3] = coreRight;
-      coreY[0] = coreTop;
-      coreY[1] = coreTop;
-      coreY[2] = coreBottom;
-      coreY[3] = coreBottom;
+    const setup = () => {
+      if (cancelled) return;
 
-      for (let i = 0; i < 4; i++) {
-        const px = parentX[i];
-        const py = parentY[i];
-        const cx = coreX[i];
-        const cy = coreY[i];
-        const bx = px + cornerT[i] * (cx - px);
-        const by = py + cornerT[i] * (cy - py);
-        boxX[i] = bx;
-        boxY[i] = by;
-        outerLines[i].setAttribute("x1", px);
-        outerLines[i].setAttribute("y1", py);
-        outerLines[i].setAttribute("x2", bx);
-        outerLines[i].setAttribute("y2", by);
-        innerLines[i].setAttribute("x1", bx);
-        innerLines[i].setAttribute("y1", by);
-        innerLines[i].setAttribute("x2", cx);
-        innerLines[i].setAttribute("y2", cy);
+      const parent = parentRef.current;
+      const halo = haloRef.current;
+      const core = coreRef.current;
+      const fill = fillRef.current;
+      const svg = svgRef.current;
+      // On SSR hydration, sibling motion refs can still be null when this
+      // layout effect first runs. Retry on the next frame until ready.
+      if (!parent || !halo || !core || !fill || !svg) {
+        rafId = requestAnimationFrame(setup);
+        return;
       }
 
-      polygon.setAttribute(
-        "points",
-        boxX[0] +
-          "," +
-          boxY[0] +
-          " " +
-          boxX[1] +
-          "," +
-          boxY[1] +
-          " " +
-          boxX[3] +
-          "," +
-          boxY[3] +
-          " " +
-          boxX[2] +
-          "," +
-          boxY[2],
-      );
-    };
+      const outerLines = svg.querySelectorAll(".line-outer");
+      const innerLines = svg.querySelectorAll(".line-inner");
+      const polygon = fill.querySelector(".halo-box");
+      const metrics = {
+        haloLeft: 0,
+        haloTop: 0,
+        haloWidth: 0,
+        haloHeight: 0,
+        coreLeft: 0,
+        coreTop: 0,
+        coreWidth: 0,
+        coreHeight: 0,
+        parentWidth: 0,
+        parentHeight: 0,
+      };
+      const cornerT = [1, 1, 1, 1];
+      const parentX = [0, 0, 0, 0];
+      const parentY = [0, 0, 0, 0];
+      const coreX = [0, 0, 0, 0];
+      const coreY = [0, 0, 0, 0];
+      const boxX = [0, 0, 0, 0];
+      const boxY = [0, 0, 0, 0];
 
-    const measure = () => {
-      const parentRect = parent.getBoundingClientRect();
-      const haloRect = halo.getBoundingClientRect();
-      const coreRect = core.getBoundingClientRect();
-      const dragX = x.get();
-      const dragY = y.get();
-      metrics.parentWidth = parentRect.width;
-      metrics.parentHeight = parentRect.height;
-      metrics.haloWidth = haloRect.width;
-      metrics.haloHeight = haloRect.height;
-      metrics.haloLeft = haloRect.left - parentRect.left - dragX;
-      metrics.haloTop = haloRect.top - parentRect.top - dragY;
-      metrics.coreWidth = coreRect.width;
-      metrics.coreHeight = coreRect.height;
-      metrics.coreLeft = coreRect.left - parentRect.left - dragX;
-      metrics.coreTop = coreRect.top - parentRect.top - dragY;
+      const draw = () => {
+        const dragX = x.get();
+        const dragY = y.get();
+        const coreLeft = metrics.coreLeft + dragX;
+        const coreTop = metrics.coreTop + dragY;
+        const coreRight = coreLeft + metrics.coreWidth;
+        const coreBottom = coreTop + metrics.coreHeight;
+        const parentWidth = metrics.parentWidth;
+        const parentHeight = metrics.parentHeight;
+        parentX[0] = 0;
+        parentX[1] = parentWidth;
+        parentX[2] = 0;
+        parentX[3] = parentWidth;
+        parentY[0] = 0;
+        parentY[1] = 0;
+        parentY[2] = parentHeight;
+        parentY[3] = parentHeight;
+        coreX[0] = coreLeft;
+        coreX[1] = coreRight;
+        coreX[2] = coreLeft;
+        coreX[3] = coreRight;
+        coreY[0] = coreTop;
+        coreY[1] = coreTop;
+        coreY[2] = coreBottom;
+        coreY[3] = coreBottom;
 
-      const haloCornerX = [
-        metrics.haloLeft,
-        metrics.haloLeft + metrics.haloWidth,
-        metrics.haloLeft,
-        metrics.haloLeft + metrics.haloWidth,
-      ];
-      const haloCornerY = [
-        metrics.haloTop,
-        metrics.haloTop,
-        metrics.haloTop + metrics.haloHeight,
-        metrics.haloTop + metrics.haloHeight,
-      ];
-      const coreCornerX = [
-        metrics.coreLeft,
-        metrics.coreLeft + metrics.coreWidth,
-        metrics.coreLeft,
-        metrics.coreLeft + metrics.coreWidth,
-      ];
-      const coreCornerY = [
-        metrics.coreTop,
-        metrics.coreTop,
-        metrics.coreTop + metrics.coreHeight,
-        metrics.coreTop + metrics.coreHeight,
-      ];
-      const parentCornerX = [0, metrics.parentWidth, 0, metrics.parentWidth];
-      const parentCornerY = [0, 0, metrics.parentHeight, metrics.parentHeight];
-      for (let i = 0; i < 4; i++) {
-        cornerT[i] = fractionAlong(
-          parentCornerX[i],
-          parentCornerY[i],
-          haloCornerX[i],
-          haloCornerY[i],
-          coreCornerX[i],
-          coreCornerY[i],
+        for (let i = 0; i < 4; i++) {
+          const px = parentX[i];
+          const py = parentY[i];
+          const cx = coreX[i];
+          const cy = coreY[i];
+          const bx = px + cornerT[i] * (cx - px);
+          const by = py + cornerT[i] * (cy - py);
+          boxX[i] = bx;
+          boxY[i] = by;
+          outerLines[i].setAttribute("x1", px);
+          outerLines[i].setAttribute("y1", py);
+          outerLines[i].setAttribute("x2", bx);
+          outerLines[i].setAttribute("y2", by);
+          innerLines[i].setAttribute("x1", bx);
+          innerLines[i].setAttribute("y1", by);
+          innerLines[i].setAttribute("x2", cx);
+          innerLines[i].setAttribute("y2", cy);
+        }
+
+        polygon.setAttribute(
+          "points",
+          boxX[0] +
+            "," +
+            boxY[0] +
+            " " +
+            boxX[1] +
+            "," +
+            boxY[1] +
+            " " +
+            boxX[3] +
+            "," +
+            boxY[3] +
+            " " +
+            boxX[2] +
+            "," +
+            boxY[2],
         );
-      }
+      };
 
-      const viewBox = "0 0 " + metrics.parentWidth + " " + metrics.parentHeight;
-      fill.setAttribute("viewBox", viewBox);
-      svg.setAttribute("viewBox", viewBox);
-      draw();
+      const measure = () => {
+        const parentRect = parent.getBoundingClientRect();
+        const haloRect = halo.getBoundingClientRect();
+        const coreRect = core.getBoundingClientRect();
+        const dragX = x.get();
+        const dragY = y.get();
+        metrics.parentWidth = parentRect.width;
+        metrics.parentHeight = parentRect.height;
+        metrics.haloWidth = haloRect.width;
+        metrics.haloHeight = haloRect.height;
+        metrics.haloLeft = haloRect.left - parentRect.left - dragX;
+        metrics.haloTop = haloRect.top - parentRect.top - dragY;
+        metrics.coreWidth = coreRect.width;
+        metrics.coreHeight = coreRect.height;
+        metrics.coreLeft = coreRect.left - parentRect.left - dragX;
+        metrics.coreTop = coreRect.top - parentRect.top - dragY;
+
+        const haloCornerX = [
+          metrics.haloLeft,
+          metrics.haloLeft + metrics.haloWidth,
+          metrics.haloLeft,
+          metrics.haloLeft + metrics.haloWidth,
+        ];
+        const haloCornerY = [
+          metrics.haloTop,
+          metrics.haloTop,
+          metrics.haloTop + metrics.haloHeight,
+          metrics.haloTop + metrics.haloHeight,
+        ];
+        const coreCornerX = [
+          metrics.coreLeft,
+          metrics.coreLeft + metrics.coreWidth,
+          metrics.coreLeft,
+          metrics.coreLeft + metrics.coreWidth,
+        ];
+        const coreCornerY = [
+          metrics.coreTop,
+          metrics.coreTop,
+          metrics.coreTop + metrics.coreHeight,
+          metrics.coreTop + metrics.coreHeight,
+        ];
+        const parentCornerX = [0, metrics.parentWidth, 0, metrics.parentWidth];
+        const parentCornerY = [0, 0, metrics.parentHeight, metrics.parentHeight];
+        for (let i = 0; i < 4; i++) {
+          cornerT[i] = fractionAlong(
+            parentCornerX[i],
+            parentCornerY[i],
+            haloCornerX[i],
+            haloCornerY[i],
+            coreCornerX[i],
+            coreCornerY[i],
+          );
+        }
+
+        const viewBox = "0 0 " + metrics.parentWidth + " " + metrics.parentHeight;
+        fill.setAttribute("viewBox", viewBox);
+        svg.setAttribute("viewBox", viewBox);
+        draw();
+      };
+
+      tearDown();
+      measure();
+      stopX = x.on("change", draw);
+      stopY = y.on("change", draw);
+      observer = new ResizeObserver(measure);
+      observer.observe(parent);
+      observer.observe(halo);
+      observer.observe(core);
     };
 
-    measure();
-    const stopX = x.onChange(draw);
-    const stopY = y.onChange(draw);
-    const observer = new ResizeObserver(measure);
-    observer.observe(parent);
-    observer.observe(halo);
-    observer.observe(core);
+    setup();
     return () => {
-      stopX();
-      stopY();
-      observer.disconnect();
+      cancelled = true;
+      if (rafId) cancelAnimationFrame(rafId);
+      tearDown();
     };
   }, [parentRef, haloRef, coreRef, x, y]);
 
@@ -349,6 +376,10 @@ export default function HeroSection() {
             onPointerEnter={followPointer}
             onPointerMove={followPointer}
             onPointerLeave={resetToCenter}>
+            {/* Halo mounts first so its refs exist before HaloCornerLines measures */}
+            <motion.div ref={haloRef} className="yellow-halo" style={{ x, y }}>
+              <div className="yellow-core" ref={coreRef} />
+            </motion.div>
             <HaloCornerLines
               x={x}
               y={y}
@@ -356,9 +387,6 @@ export default function HeroSection() {
               haloRef={haloRef}
               coreRef={coreRef}
             />
-            <motion.div ref={haloRef} className="yellow-halo" style={{ x, y }}>
-              <div className="yellow-core" ref={coreRef} />
-            </motion.div>
           </div>
 
           <div className="services-box">
@@ -513,7 +541,7 @@ export default function HeroSection() {
           font-size: clamp(16px, 5.1cqi, 32px);
           letter-spacing: -0.02em;
           text-align: center;
-          line-height: 1;
+          line-height: 1.2;
           cursor: default;
         }
 
