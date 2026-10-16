@@ -60,10 +60,6 @@ h1 {
   font-weight: 600;
 }
 
-a:hover{
-  cursor: pointer;
-}
-
 li a:hover{
   text-decoration: underline;
 }
@@ -72,4 +68,16 @@ li a:hover{
   .w-50-xl {
     width: 50%;
   }
+}
+
+/* Custom cursors */
+* {
+  cursor: url('/cursors/cursor-default.png') 1 53, auto !important;
+}
+
+input,
+textarea,
+select,
+[contenteditable] {
+  cursor: url('/cursors/cursor-text.png') 5 57, text !important;
 }
