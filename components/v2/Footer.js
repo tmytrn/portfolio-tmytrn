@@ -1,11 +1,11 @@
-import {useState} from "react";
+import { useState } from "react";
 import Image from "next/image";
-import {urlFor} from "../../lib/sanity";
+import { urlFor } from "../../lib/sanity";
 
 const FALLBACK_STATIC = "/images/v2/computer-drawing-transparent@4x.png";
 const FALLBACK_ALT = "Computer illustration";
 
-export default function Footer({footerLeft}) {
+export default function Footer({ footerLeft }) {
   const [hovered, setHovered] = useState(false);
 
   const alt = footerLeft?.alt || FALLBACK_ALT;
@@ -23,8 +23,7 @@ export default function Footer({footerLeft}) {
           <div
             className="footer-left"
             onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-          >
+            onMouseLeave={() => setHovered(false)}>
             {showGif ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -34,11 +33,7 @@ export default function Footer({footerLeft}) {
               />
             ) : staticUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={restingSrc}
-                alt={alt}
-                className="computer-drawing"
-              />
+              <img src={restingSrc} alt={alt} className="computer-drawing" />
             ) : (
               <Image
                 src={FALLBACK_STATIC}
@@ -51,7 +46,12 @@ export default function Footer({footerLeft}) {
             {gifUrl ? (
               // Preload GIF so hover playback starts immediately
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={gifUrl} alt="" aria-hidden="true" className="gif-preload" />
+              <img
+                src={gifUrl}
+                alt=""
+                aria-hidden="true"
+                className="gif-preload"
+              />
             ) : null}
           </div>
 
@@ -101,7 +101,7 @@ export default function Footer({footerLeft}) {
 
         .footer-left :global(.computer-drawing) {
           image-rendering: pixelated;
-          width: clamp(54px, 7.5vw, 108px);
+          width: clamp(120px, 7.5vw, 200px);
           height: auto;
           display: block;
         }
@@ -182,7 +182,6 @@ export default function Footer({footerLeft}) {
             font-size: 12px;
           }
         }
-
       `}</style>
     </footer>
   );

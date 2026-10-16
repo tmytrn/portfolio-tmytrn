@@ -138,6 +138,9 @@ export default function ContactSection() {
   const fieldCount = Object.keys(fieldValidity).length;
   const formProgress = validatedCount / fieldCount;
   const isFormReady = formProgress === 1;
+  const submitOpacity = isSubmitting
+    ? 0.6
+    : 0.4 + formProgress * 0.6;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -654,9 +657,7 @@ export default function ContactSection() {
                       aria-disabled={isSubmitting || !isFormReady}
                       tabIndex={isFormReady ? 0 : -1}
                       initial={false}
-                      animate={{
-                        opacity: !isFormReady ? 0 : isSubmitting ? 0.6 : 1,
-                      }}
+                      animate={{ opacity: submitOpacity }}
                       transition={
                         prefersReducedMotion
                           ? { duration: 0 }
@@ -1033,7 +1034,9 @@ export default function ContactSection() {
           }
 
           .contact-intro {
+            width: 100%;
             font-size: 24px;
+            margin-bottom: 24px;
           }
 
           .contact-schedule {
