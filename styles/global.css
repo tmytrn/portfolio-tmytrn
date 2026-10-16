@@ -73,3 +73,50 @@ li a:hover{
     width: 50%;
   }
 }
+
+/* Custom cursors */
+html,
+body {
+  cursor: url('/cursors/cursor-default-64.png') 2 2, auto;
+}
+
+a,
+button,
+[role='button'] {
+  cursor: url('/cursors/cursor-pointer-64.png') 8 2, pointer;
+}
+
+input,
+textarea,
+[contenteditable] {
+  cursor: url('/cursors/cursor-text-64.png') 10 10, text;
+}
+
+[disabled],
+.disabled {
+  cursor: url('/cursors/cursor-not-allowed-64.png') 11 11, not-allowed;
+}
+
+.is-loading {
+  cursor: url('/cursors/cursor-wait-64.png') 11 11, wait;
+}
+
+.crosshair {
+  cursor: url('/cursors/cursor-crosshair-64.png') 11 11, crosshair;
+}
+
+.draggable {
+  cursor: url('/cursors/cursor-grab-64.png') 11 11, grab;
+}
+
+.draggable:active {
+  cursor: url('/cursors/cursor-grabbing-64.png') 11 11, grabbing;
+}
+
+.zoomable {
+  cursor: url('/cursors/cursor-zoom-in-64.png') 9 9, zoom-in;
+}
+
+.movable {
+  cursor: url('/cursors/cursor-move-64.png') 11 11, move;
+}
