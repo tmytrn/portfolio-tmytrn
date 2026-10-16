@@ -338,7 +338,7 @@ export default function SelectWorkSection({ projects }) {
         </div>
 
         <div className="projects-stage">
-          <AnimatePresence exitBeforeEnter initial={false}>
+          <AnimatePresence mode="wait" initial={false}>
             {visibleProjects.length === 0 ? (
               <motion.p
                 key={`empty-${filter}`}

@@ -1,10 +1,13 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   animate,
   motion,
   useMotionValue,
   useReducedMotion,
 } from "framer-motion";
+
+const useIsomorphicLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 const SERVICES = [
   "SHOPIFY SITES",
@@ -72,7 +75,7 @@ function HaloCornerLines({ x, y, parentRef, haloRef, coreRef }) {
   const fillRef = useRef(null);
   const svgRef = useRef(null);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const parent = parentRef.current;
     const halo = haloRef.current;
     const core = coreRef.current;

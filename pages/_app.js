@@ -44,10 +44,10 @@ export default function App({ Component, pageProps }) {
           fbq('track', 'PageView');
         `}
       </Script>
-      <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
-        <Component {...pageProps} />
-        <Analytics />
+      <AnimatePresence mode="wait" onExitComplete={handleExitComplete}>
+        <Component {...pageProps} key={router.asPath} />
       </AnimatePresence>
+      <Analytics />
     </>
   )
 }

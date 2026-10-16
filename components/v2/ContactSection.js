@@ -1,6 +1,9 @@
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { trackCalendlyClick } from "../../utils/trackCalendlyClick";
+
+const useIsomorphicLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 const EMPTY_FORM = {
   firstName: "",
@@ -176,7 +179,7 @@ export default function ContactSection() {
     });
   };
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const el = sliderRef.current;
     if (!el) return;
 
@@ -214,7 +217,7 @@ export default function ContactSection() {
     return () => observer.disconnect();
   }, [formData.budgetMin, formData.budgetMax]);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const el = formRef.current;
     if (!el) return;
 
@@ -237,7 +240,7 @@ export default function ContactSection() {
     return () => observer.disconnect();
   }, [formVisible]);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const path = progressPathRef.current;
     if (!path || !progressPathD) {
       setPerimeter(0);
