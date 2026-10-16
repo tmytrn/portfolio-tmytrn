@@ -612,12 +612,12 @@ export default function SelectWorkSection({ projects }) {
           }
 
           .project-title {
-            font-size: 24px;
+            font-size: 18px;
             margin-top: 4px;
           }
 
           .project-description {
-            display: none;
+            font-size: 12px;
           }
 
           .project-tools {

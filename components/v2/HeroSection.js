@@ -467,6 +467,8 @@ export default function HeroSection() {
           justify-content: center;
           position: relative;
           overflow: hidden;
+          /* Keep held/dragged touches on the halo, not page scroll */
+          touch-action: none;
         }
 
         .gradient-box :global(.halo-fill),
@@ -611,7 +613,7 @@ export default function HeroSection() {
 
           .hero-subline {
             font-size: 18px;
-            max-width: 259px;
+            max-width: 280px;
             margin-top: 10px;
           }
 
@@ -622,7 +624,7 @@ export default function HeroSection() {
               "label"
               "services";
             row-gap: 0;
-            margin-top: 60px;
+            margin-top: 48px;
           }
 
           .services-label {
