@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 import { urlFor } from "../../lib/sanity";
 
@@ -6,25 +5,19 @@ const FALLBACK_STATIC = "/images/v2/computer-drawing-transparent@4x.png";
 const FALLBACK_ALT = "Computer illustration";
 
 export default function Footer({ footerLeft }) {
-  const [hovered, setHovered] = useState(false);
-
   const alt = footerLeft?.alt || FALLBACK_ALT;
   const staticUrl = footerLeft?.staticImage?.asset
     ? urlFor(footerLeft.staticImage)?.width(216).url()
     : null;
   const gifUrl = footerLeft?.gif?.asset?.url || null;
   const restingSrc = staticUrl || FALLBACK_STATIC;
-  const showGif = hovered && Boolean(gifUrl);
 
   return (
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-row">
-          <div
-            className="footer-left"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}>
-            {showGif ? (
+          <div className="footer-left">
+            {gifUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={gifUrl}
@@ -43,16 +36,6 @@ export default function Footer({ footerLeft }) {
                 className="computer-drawing"
               />
             )}
-            {gifUrl ? (
-              // Preload GIF so hover playback starts immediately
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={gifUrl}
-                alt=""
-                aria-hidden="true"
-                className="gif-preload"
-              />
-            ) : null}
           </div>
 
           <div className="footer-right">
@@ -96,7 +79,6 @@ export default function Footer({ footerLeft }) {
 
         .footer-left {
           flex-shrink: 0;
-          cursor: default;
         }
 
         .footer-left :global(.computer-drawing) {
@@ -104,15 +86,6 @@ export default function Footer({ footerLeft }) {
           width: clamp(120px, 7.5vw, 200px);
           height: auto;
           display: block;
-        }
-
-        .gif-preload {
-          position: absolute;
-          width: 0;
-          height: 0;
-          opacity: 0;
-          pointer-events: none;
-          overflow: hidden;
         }
 
         .footer-right {

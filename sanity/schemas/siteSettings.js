@@ -14,13 +14,13 @@ export const siteSettings = defineType({
       title: 'Footer Left',
       type: 'object',
       group: 'footer',
-      description: 'Illustration on the left side of the footer. Shows the static image by default; the GIF plays on hover.',
+      description: 'Illustration on the left side of the footer. Uses the GIF when set; otherwise the static image.',
       fields: [
         defineField({
           name: 'staticImage',
           title: 'Static Image',
           type: 'image',
-          description: 'Shown at rest. Usually the first frame of the GIF.',
+          description: 'Fallback when no GIF is set.',
           options: {
             hotspot: true,
           },
@@ -29,7 +29,7 @@ export const siteSettings = defineType({
           name: 'gif',
           title: 'GIF',
           type: 'file',
-          description: 'Plays when the footer left area is hovered.',
+          description: 'Loops continuously in the footer.',
           options: {
             accept: 'image/gif',
           },
