@@ -75,6 +75,9 @@ export default function SeoHead({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="690" />
+      <meta property="og:image:height" content="452" />
+      <meta property="og:image:alt" content="TMYTRN LLC" />
       <meta property="og:locale" content="en_US" />
 
       <meta name="twitter:card" content="summary_large_image" />
