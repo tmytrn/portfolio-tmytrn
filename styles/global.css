@@ -72,12 +72,12 @@ li a:hover{
 
 /* Custom cursors */
 * {
-  cursor: url('/cursors/cursor-default.png') 1 53, auto !important;
+  cursor: url('/cursors/just-glove.png') 1 51, auto !important;
 }
 
 input,
 textarea,
 select,
 [contenteditable] {
-  cursor: url('/cursors/cursor-text.png') 5 57, text !important;
+  cursor: url('/cursors/iron-bar.png') 11 48, text !important;
 }
