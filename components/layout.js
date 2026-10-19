@@ -30,8 +30,11 @@ export default function Layout({
         <meta property="og:url" content="https://tmytrn.com" />
         <meta
           property="og:image"
-          content="https://tmytrn.com/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg"
+          content="https://tmytrn.com/og-image.png"
         />
+        <meta property="og:image:width" content="690" />
+        <meta property="og:image:height" content="452" />
+        <meta property="og:image:alt" content="TMYTRN LLC" />
         <meta
           property="og:description"
           content="Tommy Tran is a digital designer and developer based in Los Angeles.
@@ -39,11 +42,12 @@ export default function Layout({
     design tells a story, and should feel effortless."
         />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tommy Tran" />
         <meta name="twitter:site" content="@tmytrn" />
         <meta
           name="twitter:image"
-          content="https://tmytrn.com/tommy-tran-@tmytrn-website-portrait-2020-by-benjamin-siordia.jpg"
+          content="https://tmytrn.com/og-image.png"
         />
         <link
           rel="stylesheet"
